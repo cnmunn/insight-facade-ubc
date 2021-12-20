@@ -1,0 +1,21 @@
+{
+	"title": "should throw InsightError if APPLYRULE is an empty object",
+	"input": {
+		"WHERE": {},
+		"OPTIONS": {
+			"COLUMNS": [
+				"courses_title"
+			]
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"courses_title"
+			],
+			"APPLY": [
+				{}
+			]
+		}
+	},
+	"errorExpected": true,
+	"with": "InsightError"
+}

@@ -1,0 +1,15 @@
+{
+	"title": "should throw InsightError if TRANSFORMATIONS is not an object",
+	"input": {
+		"WHERE": {},
+		"OPTIONS": {
+			"COLUMNS": [
+				"courses_title",
+				"overallAvg"
+			]
+		},
+		"TRANSFORMATIONS": []
+	},
+	"errorExpected": true,
+	"with": "InsightError"
+}

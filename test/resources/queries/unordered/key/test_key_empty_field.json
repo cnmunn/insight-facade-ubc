@@ -1,0 +1,18 @@
+{
+  "title": "should throw InsightError if a key string has an empty field",
+  "input": {
+    "WHERE":{
+      "IS":{
+        "courses_dept": "cpsc"
+      }
+    },
+    "OPTIONS":{
+      "COLUMNS":[
+        "courses_dept",
+        "courses_"
+      ]
+    }
+  },
+  "errorExpected": true,
+  "with": "InsightError"
+}

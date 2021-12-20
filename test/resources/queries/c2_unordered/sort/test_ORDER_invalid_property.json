@@ -1,0 +1,23 @@
+{
+	"title": "should throw InsightError if ORDER has 2 properties but one of them is invalid",
+	"input": {
+		"WHERE": {
+			"IS": {
+				"rooms_furniture": "*Tables*"
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"rooms_shortname"
+			],
+			"ORDER": {
+				"direction": "UP",
+				"keys": [
+					"maxSeats"
+				]
+			}
+		}
+	},
+	"errorExpected": true,
+	"with": "InsightError"
+}

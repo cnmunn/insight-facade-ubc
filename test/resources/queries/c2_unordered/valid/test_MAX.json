@@ -1,0 +1,100 @@
+{
+	"title": "can successfully apply MAX to a group",
+	"input": {
+		"WHERE": {
+			"AND": [
+				{
+					"IS": {
+						"courses_dept": "cpsc"
+					}
+				},
+				{
+					"IS": {
+						"courses_id": "3*"
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"courses_title",
+				"highestAvg"
+			]
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"courses_title"
+			],
+			"APPLY": [
+				{
+					"highestAvg": {
+						"MAX": "courses_avg"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": false,
+	"with": [
+		{
+			"courses_title": "comptng life sci",
+			"highestAvg": 88
+		},
+		{
+			"courses_title": "num comp alg prb",
+			"highestAvg": 79.46
+		},
+		{
+			"courses_title": "num approx/discr",
+			"highestAvg": 77.62
+		},
+		{
+			"courses_title": "intr rel databse",
+			"highestAvg": 85.5
+		},
+		{
+			"courses_title": "intr sftwr eng",
+			"highestAvg": 84.6
+		},
+		{
+			"courses_title": "programmng langs",
+			"highestAvg": 84.39
+		},
+		{
+			"courses_title": "func & logic prg",
+			"highestAvg": 85.13
+		},
+		{
+			"courses_title": "comp hard&os",
+			"highestAvg": 82.27
+		},
+		{
+			"courses_title": "comp graphics",
+			"highestAvg": 82.58
+		},
+		{
+			"courses_title": "internet comp",
+			"highestAvg": 76.87
+		},
+		{
+			"courses_title": "softwr eng proj",
+			"highestAvg": 88.39
+		},
+		{
+			"courses_title": "intr alg dsgn&an",
+			"highestAvg": 73.38
+		},
+		{
+			"courses_title": "artificial intel",
+			"highestAvg": 78.34
+		},
+		{
+			"courses_title": "machine lrn mine",
+			"highestAvg": 82.66
+		},
+		{
+			"courses_title": "hum-com interact",
+			"highestAvg": 81.18
+		}
+	]
+}

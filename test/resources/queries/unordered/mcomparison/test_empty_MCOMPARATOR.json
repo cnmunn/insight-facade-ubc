@@ -1,0 +1,17 @@
+{
+  "title": "should throw InsightError if MCOMPARATOR (LT) is an empty object",
+  "input": {
+    "WHERE":{
+      "LT":{}
+    },
+    "OPTIONS":{
+      "COLUMNS":[
+        "courses_dept",
+        "courses_avg"
+      ],
+      "ORDER":"courses_avg"
+    }
+  },
+  "errorExpected": true,
+  "with": "InsightError"
+}

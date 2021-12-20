@@ -1,0 +1,79 @@
+{
+	"title": "APPLY key does not have to appear in columns (courses dataset)",
+	"input": {
+		"WHERE": {
+			"EQ": {
+				"courses_pass": 312
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"courses_dept",
+				"courses_id",
+				"numSections",
+				"maxFail"
+			]
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"courses_dept",
+				"courses_id"
+			],
+			"APPLY": [
+				{
+					"numSections": {
+						"COUNT": "courses_uuid"
+					}
+				},
+				{
+					"extra1": {
+						"MAX": "courses_avg"
+					}
+				},
+				{
+					"maxFail": {
+						"MAX": "courses_fail"
+					}
+				},
+				{
+					"extra2": {
+						"AVG": "courses_audit"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": false,
+	"with": [
+		{
+			"courses_dept": "chem",
+			"courses_id": "154",
+			"numSections": 1,
+			"maxFail": 15
+		},
+		{
+			"courses_dept": "engl",
+			"courses_id": "221",
+			"numSections": 1,
+			"maxFail": 3
+		},
+		{
+			"courses_dept": "eosc",
+			"courses_id": "118",
+			"numSections": 1,
+			"maxFail": 6
+		},
+		{
+			"courses_dept": "geog",
+			"courses_id": "310",
+			"numSections": 1,
+			"maxFail": 8
+		},
+		{
+			"courses_dept": "scie",
+			"courses_id": "113",
+			"numSections": 1,
+			"maxFail": 10
+		}
+	]
+}

@@ -1,0 +1,21 @@
+{
+	"title": "should throw InsightError if ORDER[\"keys\"] is not an array",
+	"input": {
+		"WHERE": {
+			"IS": {
+				"rooms_furniture": "*Tables*"
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"rooms_shortname"
+			],
+			"ORDER": {
+				"direction": "UP",
+				"keys": "rooms_shortname"
+			}
+		}
+	},
+	"errorExpected": true,
+	"with": "InsightError"
+}

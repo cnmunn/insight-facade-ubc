@@ -1,0 +1,153 @@
+{
+	"title": "can compute multiple APPLY columns",
+	"input": {
+		"WHERE": {
+			"GT": {
+				"rooms_seats": 200
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"numRooms",
+				"maxCapacity",
+				"rooms_shortname",
+				"rooms_type"
+			]
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"rooms_shortname",
+				"rooms_type"
+			],
+			"APPLY": [
+				{
+					"numRooms": {
+						"COUNT": "rooms_name"
+					}
+				},
+				{
+					"maxCapacity": {
+						"MAX": "rooms_seats"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": false,
+	"with": [
+		{
+			"numRooms": 1,
+			"maxCapacity": 228,
+			"rooms_shortname": "BIOL",
+			"rooms_type": "Tiered Large Group"
+		},
+		{
+			"numRooms": 1,
+			"maxCapacity": 275,
+			"rooms_shortname": "BUCH",
+			"rooms_type": "Tiered Large Group"
+		},
+		{
+			"numRooms": 1,
+			"maxCapacity": 426,
+			"rooms_shortname": "CIRS",
+			"rooms_type": "Tiered Large Group"
+		},
+		{
+			"numRooms": 2,
+			"maxCapacity": 265,
+			"rooms_shortname": "CHEM",
+			"rooms_type": "Tiered Large Group"
+		},
+		{
+			"numRooms": 1,
+			"maxCapacity": 350,
+			"rooms_shortname": "ESB",
+			"rooms_type": "Tiered Large Group"
+		},
+		{
+			"numRooms": 1,
+			"maxCapacity": 250,
+			"rooms_shortname": "FSC",
+			"rooms_type": "Tiered Large Group"
+		},
+		{
+			"numRooms": 1,
+			"maxCapacity": 225,
+			"rooms_shortname": "GEOG",
+			"rooms_type": "Tiered Large Group"
+		},
+		{
+			"numRooms": 1,
+			"maxCapacity": 375,
+			"rooms_shortname": "HEBB",
+			"rooms_type": "Tiered Large Group"
+		},
+		{
+			"numRooms": 1,
+			"maxCapacity": 257,
+			"rooms_shortname": "HENN",
+			"rooms_type": "Tiered Large Group"
+		},
+		{
+			"numRooms": 1,
+			"maxCapacity": 260,
+			"rooms_shortname": "ANGU",
+			"rooms_type": "Tiered Large Group"
+		},
+		{
+			"numRooms": 1,
+			"maxCapacity": 205,
+			"rooms_shortname": "LSK",
+			"rooms_type": "Tiered Large Group"
+		},
+		{
+			"numRooms": 2,
+			"maxCapacity": 350,
+			"rooms_shortname": "LSC",
+			"rooms_type": "Tiered Large Group"
+		},
+		{
+			"numRooms": 1,
+			"maxCapacity": 224,
+			"rooms_shortname": "MATH",
+			"rooms_type": "Tiered Large Group"
+		},
+		{
+			"numRooms": 1,
+			"maxCapacity": 280,
+			"rooms_shortname": "SCRF",
+			"rooms_type": "Tiered Large Group"
+		},
+		{
+			"numRooms": 1,
+			"maxCapacity": 236,
+			"rooms_shortname": "PHRM",
+			"rooms_type": "Tiered Large Group"
+		},
+		{
+			"numRooms": 1,
+			"maxCapacity": 442,
+			"rooms_shortname": "OSBO",
+			"rooms_type": "Open Design General Purpose"
+		},
+		{
+			"numRooms": 3,
+			"maxCapacity": 299,
+			"rooms_shortname": "SRC",
+			"rooms_type": "TBD"
+		},
+		{
+			"numRooms": 1,
+			"maxCapacity": 325,
+			"rooms_shortname": "WESB",
+			"rooms_type": "Tiered Large Group"
+		},
+		{
+			"numRooms": 1,
+			"maxCapacity": 503,
+			"rooms_shortname": "WOOD",
+			"rooms_type": "Tiered Large Group"
+		}
+	]
+}

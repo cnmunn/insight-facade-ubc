@@ -1,0 +1,21 @@
+{
+  "title": "should return correct result when NOT is applied to an IS",
+  "input": {
+    "WHERE":{
+      "NOT":{
+        "IS": {
+          "courses_id": "*"
+        }
+      }
+    },
+    "OPTIONS":{
+      "COLUMNS":[
+        "courses_id",
+        "courses_uuid",
+        "courses_audit"
+      ]
+    }
+  },
+  "errorExpected": false,
+  "with": []
+}

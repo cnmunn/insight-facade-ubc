@@ -1,0 +1,21 @@
+{
+  "title": "should throw InsightError if ORDER does not have a string value",
+  "input": {
+    "WHERE":{
+      "IS":{
+        "courses_dept": "cp*"
+      }
+    },
+    "OPTIONS":{
+      "COLUMNS":[
+        "courses_dept",
+        "courses_title"
+      ],
+      "ORDER": [
+		  "courses_dept"
+	  ]
+    }
+  },
+  "errorExpected": true,
+  "with": "InsightError"
+}

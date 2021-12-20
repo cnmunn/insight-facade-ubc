@@ -1,0 +1,14 @@
+{
+  "title": "should throw InsightError if WHERE is not an object",
+  "input": {
+    "WHERE": ["not an object"],
+    "OPTIONS":{
+      "COLUMNS":[
+        "courses_dept",
+        "courses_title"
+      ]
+    }
+  },
+  "errorExpected": true,
+  "with": "InsightError"
+}

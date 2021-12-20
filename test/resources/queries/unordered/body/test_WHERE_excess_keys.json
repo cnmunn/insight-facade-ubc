@@ -1,0 +1,21 @@
+{
+  "title": "should throw InsightError if WHERE is an object with more than 1 key",
+  "input": {
+    "WHERE": {
+      "GT": {
+        "courses_avg": 99
+      },
+      "EQ": {
+        "courses_id": "200"
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_id"
+      ]
+    }
+  },
+  "errorExpected": true,
+  "with": "InsightError"
+}

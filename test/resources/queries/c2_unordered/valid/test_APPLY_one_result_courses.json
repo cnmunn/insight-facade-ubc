@@ -1,0 +1,128 @@
+{
+	"title": "can compute one APPLY column (on a courses dataset)",
+	"input": {
+		"WHERE": {
+			"GT": {
+				"courses_avg": 97
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"minFail",
+				"courses_id",
+				"courses_dept"
+			]
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"courses_dept",
+				"courses_id"
+			],
+			"APPLY": [
+				{
+					"minFail": {
+						"MIN": "courses_fail"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": false,
+	"with": [
+		{
+			"minFail": 0,
+			"courses_id": "574",
+			"courses_dept": "cnps"
+		},
+		{
+			"minFail": 0,
+			"courses_id": "599",
+			"courses_dept": "crwr"
+		},
+		{
+			"minFail": 0,
+			"courses_id": "500",
+			"courses_dept": "educ"
+		},
+		{
+			"minFail": 0,
+			"courses_id": "541",
+			"courses_dept": "eece"
+		},
+		{
+			"minFail": 0,
+			"courses_id": "421",
+			"courses_dept": "epse"
+		},
+		{
+			"minFail": 0,
+			"courses_id": "449",
+			"courses_dept": "epse"
+		},
+		{
+			"minFail": 0,
+			"courses_id": "519",
+			"courses_dept": "epse"
+		},
+		{
+			"minFail": 0,
+			"courses_id": "534",
+			"courses_dept": "epse"
+		},
+		{
+			"minFail": 0,
+			"courses_id": "549",
+			"courses_dept": "epse"
+		},
+		{
+			"minFail": 0,
+			"courses_id": "596",
+			"courses_dept": "epse"
+		},
+		{
+			"minFail": 0,
+			"courses_id": "606",
+			"courses_dept": "epse"
+		},
+		{
+			"minFail": 0,
+			"courses_id": "525",
+			"courses_dept": "math"
+		},
+		{
+			"minFail": 0,
+			"courses_id": "527",
+			"courses_dept": "math"
+		},
+		{
+			"minFail": 0,
+			"courses_id": "532",
+			"courses_dept": "math"
+		},
+		{
+			"minFail": 0,
+			"courses_id": "541",
+			"courses_dept": "math"
+		},
+		{
+			"minFail": 0,
+			"courses_id": "509",
+			"courses_dept": "nurs"
+		},
+		{
+			"minFail": 0,
+			"courses_id": "578",
+			"courses_dept": "nurs"
+		},
+		{
+			"minFail": 0,
+			"courses_id": "591",
+			"courses_dept": "nurs"
+		},
+		{
+			"minFail": 0,
+			"courses_id": "300",
+			"courses_dept": "spph"
+		}
+	]
+}

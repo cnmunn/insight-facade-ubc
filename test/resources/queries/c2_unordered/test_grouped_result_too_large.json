@@ -1,0 +1,25 @@
+{
+	"title": "should throw ResultTooLargeError if the grouped result is too large",
+	"input": {
+		"WHERE": {
+			"EQ": {
+				"courses_year": 1900
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"courses_id"
+			]
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"courses_dept",
+				"courses_id",
+				"courses_uuid"
+			],
+			"APPLY": []
+		}
+	},
+	"errorExpected": true,
+	"with": "ResultTooLargeError"
+}

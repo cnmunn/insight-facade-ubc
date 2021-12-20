@@ -1,0 +1,17 @@
+{
+  "title": "should throw InsightError if LOGIC (AND) clause is empty",
+  "input": {
+    "WHERE":{
+      "AND":[]
+    },
+    "OPTIONS":{
+      "COLUMNS":[
+        "courses_dept",
+        "courses_avg"
+      ],
+      "ORDER":"courses_avg"
+    }
+  },
+  "errorExpected": true,
+  "with": "InsightError"
+}

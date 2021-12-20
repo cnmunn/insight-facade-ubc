@@ -1,0 +1,18 @@
+{
+  "title": "should throw InsightError if the idstring of a key is invalid (contains underscores)",
+  "input": {
+    "WHERE":{
+      "IS":{
+        "ubc_courses_dept": "cpsc"
+      }
+    },
+    "OPTIONS":{
+      "COLUMNS":[
+        "ubc_courses_dept",
+        "ubc_courses_avg"
+      ]
+    }
+  },
+  "errorExpected": true,
+  "with": "InsightError"
+}

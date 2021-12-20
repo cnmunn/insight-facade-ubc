@@ -1,0 +1,77 @@
+{
+	"title": "can compute two APPLY columns using the same APPLYRULE on different keys",
+	"input": {
+		"WHERE": {
+			"LT": {
+				"rooms_seats": 100
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"rooms_type",
+				"numBuildings",
+				"numRooms"
+			]
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"rooms_type"
+			],
+			"APPLY": [
+				{
+					"numBuildings": {
+						"COUNT": "rooms_shortname"
+					}
+				},
+				{
+					"numRooms": {
+						"COUNT": "rooms_name"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": false,
+	"with": [
+		{
+			"rooms_type": "Case Style",
+			"numBuildings": 7,
+			"numRooms": 21
+		},
+		{
+			"rooms_type": "Open Design General Purpose",
+			"numBuildings": 25,
+			"numRooms": 86
+		},
+		{
+			"rooms_type": "Small Group",
+			"numBuildings": 26,
+			"numRooms": 158
+		},
+		{
+			"rooms_type": "Tiered Large Group",
+			"numBuildings": 13,
+			"numRooms": 25
+		},
+		{
+			"rooms_type": "",
+			"numBuildings": 1,
+			"numRooms": 1
+		},
+		{
+			"rooms_type": "TBD",
+			"numBuildings": 1,
+			"numRooms": 1
+		},
+		{
+			"rooms_type": "Active Learning",
+			"numBuildings": 1,
+			"numRooms": 9
+		},
+		{
+			"rooms_type": "Studio Lab",
+			"numBuildings": 2,
+			"numRooms": 3
+		}
+	]
+}

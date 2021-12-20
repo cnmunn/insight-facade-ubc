@@ -1,0 +1,57 @@
+{
+  "title": "should return correct result when ordering by a string column",
+  "input": {
+    "WHERE": {
+      "AND": [
+        {
+          "IS": {
+            "courses_id": "339"
+          }
+        },
+        {
+          "EQ": {
+            "courses_year": 2013
+          }
+        }
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_title",
+        "courses_dept"
+      ],
+      "ORDER": "courses_title"
+    }
+  },
+  "errorExpected": false,
+  "with": [
+    {
+      "courses_title": "19th century art",
+      "courses_dept": "arth"
+    },
+    {
+      "courses_title": "crit inq & rs pr",
+      "courses_dept": "nurs"
+    },
+    {
+      "courses_title": "econ tech chnges",
+      "courses_dept": "econ"
+    },
+    {
+      "courses_title": "econ tech chnges",
+      "courses_dept": "econ"
+    },
+    {
+      "courses_title": "frst meas & prod",
+      "courses_dept": "frst"
+    },
+    {
+      "courses_title": "post-prod tec i",
+      "courses_dept": "fipr"
+    },
+    {
+      "courses_title": "us 1945 - presnt",
+      "courses_dept": "hist"
+    }
+  ]
+}

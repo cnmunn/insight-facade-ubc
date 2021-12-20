@@ -1,0 +1,100 @@
+{
+	"title": "can successfully apply AVG to a group",
+	"input": {
+		"WHERE": {
+			"AND": [
+				{
+					"IS": {
+						"courses_dept": "cpsc"
+					}
+				},
+				{
+					"IS": {
+						"courses_id": "3*"
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"courses_title",
+				"averageGrade"
+			]
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"courses_title"
+			],
+			"APPLY": [
+				{
+					"averageGrade": {
+						"AVG": "courses_avg"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": false,
+	"with": [
+		{
+			"courses_title": "comptng life sci",
+			"averageGrade": 81.84
+		},
+		{
+			"courses_title": "num comp alg prb",
+			"averageGrade": 75.51
+		},
+		{
+			"courses_title": "num approx/discr",
+			"averageGrade": 72.76
+		},
+		{
+			"courses_title": "intr rel databse",
+			"averageGrade": 76.3
+		},
+		{
+			"courses_title": "intr sftwr eng",
+			"averageGrade": 78.25
+		},
+		{
+			"courses_title": "programmng langs",
+			"averageGrade": 77.25
+		},
+		{
+			"courses_title": "func & logic prg",
+			"averageGrade": 80.71
+		},
+		{
+			"courses_title": "comp hard&os",
+			"averageGrade": 73.98
+		},
+		{
+			"courses_title": "comp graphics",
+			"averageGrade": 76.78
+		},
+		{
+			"courses_title": "internet comp",
+			"averageGrade": 72.57
+		},
+		{
+			"courses_title": "softwr eng proj",
+			"averageGrade": 84.52
+		},
+		{
+			"courses_title": "intr alg dsgn&an",
+			"averageGrade": 70.09
+		},
+		{
+			"courses_title": "artificial intel",
+			"averageGrade": 73.11
+		},
+		{
+			"courses_title": "machine lrn mine",
+			"averageGrade": 75.69
+		},
+		{
+			"courses_title": "hum-com interact",
+			"averageGrade": 78.47
+		}
+	]
+}

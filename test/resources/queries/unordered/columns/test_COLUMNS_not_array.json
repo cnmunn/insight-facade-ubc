@@ -1,0 +1,18 @@
+{
+  "title": "should throw InsightError if COLUMNS is not an array",
+  "input": {
+    "WHERE":{
+      "GT": {
+        "courses_avg": 99
+      }
+    },
+    "OPTIONS":{
+      "COLUMNS": {
+        "courses_dept": "cpsc"
+      },
+      "ORDER":"courses_avg"
+    }
+  },
+  "errorExpected": true,
+  "with": "InsightError"
+}

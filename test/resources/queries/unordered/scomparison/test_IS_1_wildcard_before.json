@@ -1,0 +1,144 @@
+{
+  "title": "should return correct result if the IS clause uses one wildcard at the start",
+  "input": {
+    "WHERE": {
+      "IS": {
+        "courses_dept": "*nu"
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept"
+      ]
+    }
+  },
+  "errorExpected": false,
+  "with": [
+    {
+      "courses_dept": "hinu"
+    },
+    {
+      "courses_dept": "hinu"
+    },
+    {
+      "courses_dept": "hinu"
+    },
+    {
+      "courses_dept": "hinu"
+    },
+    {
+      "courses_dept": "hinu"
+    },
+    {
+      "courses_dept": "hinu"
+    },
+    {
+      "courses_dept": "hinu"
+    },
+    {
+      "courses_dept": "hinu"
+    },
+    {
+      "courses_dept": "hinu"
+    },
+    {
+      "courses_dept": "hinu"
+    },
+    {
+      "courses_dept": "hinu"
+    },
+    {
+      "courses_dept": "hinu"
+    },
+    {
+      "courses_dept": "hinu"
+    },
+    {
+      "courses_dept": "hinu"
+    },
+    {
+      "courses_dept": "hinu"
+    },
+    {
+      "courses_dept": "hinu"
+    },
+    {
+      "courses_dept": "hunu"
+    },
+    {
+      "courses_dept": "hunu"
+    },
+    {
+      "courses_dept": "hunu"
+    },
+    {
+      "courses_dept": "hunu"
+    },
+    {
+      "courses_dept": "hunu"
+    },
+    {
+      "courses_dept": "hunu"
+    },
+    {
+      "courses_dept": "hunu"
+    },
+    {
+      "courses_dept": "hunu"
+    },
+    {
+      "courses_dept": "hunu"
+    },
+    {
+      "courses_dept": "hunu"
+    },
+    {
+      "courses_dept": "hunu"
+    },
+    {
+      "courses_dept": "hunu"
+    },
+    {
+      "courses_dept": "hunu"
+    },
+    {
+      "courses_dept": "hunu"
+    },
+    {
+      "courses_dept": "hunu"
+    },
+    {
+      "courses_dept": "hunu"
+    },
+    {
+      "courses_dept": "hunu"
+    },
+    {
+      "courses_dept": "hunu"
+    },
+    {
+      "courses_dept": "hunu"
+    },
+    {
+      "courses_dept": "hunu"
+    },
+    {
+      "courses_dept": "hunu"
+    },
+    {
+      "courses_dept": "hunu"
+    },
+    {
+      "courses_dept": "hunu"
+    },
+    {
+      "courses_dept": "hunu"
+    },
+    {
+      "courses_dept": "hunu"
+    },
+    {
+      "courses_dept": "hunu"
+    }
+  ]
+}

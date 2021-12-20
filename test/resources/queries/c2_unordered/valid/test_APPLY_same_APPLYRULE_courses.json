@@ -1,0 +1,102 @@
+{
+	"title": "can compute two APPLY columns using the same APPLYRULE on different keys (courses dataset)",
+	"input": {
+		"WHERE": {
+			"LT": {
+				"courses_avg": 45
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"courses_title",
+				"numYears",
+				"numSections"
+			]
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"courses_title"
+			],
+			"APPLY": [
+				{
+					"numYears": {
+						"COUNT": "courses_year"
+					}
+				},
+				{
+					"numSections": {
+						"COUNT": "courses_uuid"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": false,
+	"with": [
+		{
+			"courses_title": "found re apprai",
+			"numYears": 2,
+			"numSections": 2
+		},
+		{
+			"courses_title": "resdnt prp study",
+			"numYears": 2,
+			"numSections": 2
+		},
+		{
+			"courses_title": "electrochem eng",
+			"numYears": 2,
+			"numSections": 2
+		},
+		{
+			"courses_title": "chem integ lab i",
+			"numYears": 1,
+			"numSections": 1
+		},
+		{
+			"courses_title": "engr econ anlys",
+			"numYears": 1,
+			"numSections": 1
+		},
+		{
+			"courses_title": "language & curr",
+			"numYears": 2,
+			"numSections": 2
+		},
+		{
+			"courses_title": "sustnbt&frst ops",
+			"numYears": 1,
+			"numSections": 1
+		},
+		{
+			"courses_title": "forest ecology",
+			"numYears": 1,
+			"numSections": 1
+		},
+		{
+			"courses_title": "hist 1500 - 20 c",
+			"numYears": 1,
+			"numSections": 1
+		},
+		{
+			"courses_title": "in land food com",
+			"numYears": 2,
+			"numSections": 2
+		},
+		{
+			"courses_title": "log & crit think",
+			"numYears": 1,
+			"numSections": 1
+		},
+		{
+			"courses_title": "health psycholgy",
+			"numYears": 1,
+			"numSections": 1
+		},
+		{
+			"courses_title": "prpty,ident&uses",
+			"numYears": 1,
+			"numSections": 1
+		}
+	]
+}

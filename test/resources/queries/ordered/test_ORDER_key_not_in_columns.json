@@ -1,0 +1,19 @@
+{
+  "title": "should throw InsightError if COLUMNS does not contain the key to ORDER by",
+  "input": {
+    "WHERE":{
+      "IS":{
+        "courses_dept": "cp*"
+      }
+    },
+    "OPTIONS":{
+      "COLUMNS":[
+        "courses_dept",
+        "courses_title"
+      ],
+      "ORDER": "courses_avg"
+    }
+  },
+  "errorExpected": true,
+  "with": "InsightError"
+}

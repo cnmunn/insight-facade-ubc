@@ -1,0 +1,12 @@
+{
+  "title": "should throw InsightError if query has no OPTIONS clause",
+  "input": {
+    "WHERE": {
+      "GT": {
+        "courses_avg": 99
+      }
+    }
+  },
+  "errorExpected": true,
+  "with": "InsightError"
+}

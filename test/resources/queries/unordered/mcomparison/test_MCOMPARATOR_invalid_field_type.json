@@ -1,0 +1,18 @@
+{
+  "title": "should throw InsightError if MCOMPARATOR (LT) clause is applied to a string field",
+  "input": {
+    "WHERE":{
+      "LT":{
+        "courses_title": 70
+      }
+    },
+    "OPTIONS":{
+      "COLUMNS":[
+        "courses_title",
+        "courses_avg"
+      ]
+    }
+  },
+  "errorExpected": true,
+  "with": "InsightError"
+}

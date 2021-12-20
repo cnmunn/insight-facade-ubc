@@ -1,0 +1,18 @@
+{
+  "title": "should throw InsightError if QUERY has more than 2 keys",
+  "input": {
+    "WHERE": {
+      "GT": {
+        "courses_avg": 99
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_avg"
+      ]
+    },
+    "EXTRA": 10
+  },
+  "errorExpected": true,
+  "with": "InsightError"
+}

@@ -1,0 +1,13 @@
+{
+	"WHERE": {
+		"IS": {
+			"courses_dept": "c*"
+		}
+	},
+	"OPTIONS": {
+		"COLUMNS": [
+			"courses_title",
+			"courses_id"
+		]
+	}
+}

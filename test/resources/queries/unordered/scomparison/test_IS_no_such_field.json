@@ -1,0 +1,18 @@
+{
+  "title": "should throw InsightError if FILTER (IS) clause references a non-existent field",
+  "input": {
+    "WHERE":{
+      "IS":{
+        "courses_eee": "cpsc 310"
+      }
+    },
+    "OPTIONS":{
+      "COLUMNS":[
+        "courses_dept",
+        "courses_title"
+      ]
+    }
+  },
+  "errorExpected": true,
+  "with": "InsightError"
+}

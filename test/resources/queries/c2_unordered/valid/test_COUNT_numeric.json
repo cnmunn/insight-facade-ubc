@@ -1,0 +1,100 @@
+{
+	"title": "can successfully apply COUNT of a numeric field to a group",
+	"input": {
+		"WHERE": {
+			"AND": [
+				{
+					"IS": {
+						"courses_dept": "cpsc"
+					}
+				},
+				{
+					"IS": {
+						"courses_id": "3*"
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"courses_title",
+				"count"
+			]
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"courses_title"
+			],
+			"APPLY": [
+				{
+					"count": {
+						"COUNT": "courses_avg"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": false,
+	"with": [
+		{
+			"courses_title": "comptng life sci",
+			"count": 7
+		},
+		{
+			"courses_title": "num comp alg prb",
+			"count": 9
+		},
+		{
+			"courses_title": "num approx/discr",
+			"count": 9
+		},
+		{
+			"courses_title": "intr rel databse",
+			"count": 31
+		},
+		{
+			"courses_title": "intr sftwr eng",
+			"count": 33
+		},
+		{
+			"courses_title": "programmng langs",
+			"count": 9
+		},
+		{
+			"courses_title": "func & logic prg",
+			"count": 10
+		},
+		{
+			"courses_title": "comp hard&os",
+			"count": 31
+		},
+		{
+			"courses_title": "comp graphics",
+			"count": 27
+		},
+		{
+			"courses_title": "internet comp",
+			"count": 27
+		},
+		{
+			"courses_title": "softwr eng proj",
+			"count": 9
+		},
+		{
+			"courses_title": "intr alg dsgn&an",
+			"count": 31
+		},
+		{
+			"courses_title": "artificial intel",
+			"count": 28
+		},
+		{
+			"courses_title": "machine lrn mine",
+			"count": 10
+		},
+		{
+			"courses_title": "hum-com interact",
+			"count": 11
+		}
+	]
+}

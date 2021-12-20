@@ -1,0 +1,300 @@
+{
+	"title": "should run successfully if the WHERE returns >5000 values but there are <5000 groups",
+	"input": {
+		"WHERE": {
+			"GT": {
+				"courses_pass": 100
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"courses_dept"
+			]
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"courses_dept"
+			],
+			"APPLY": []
+		}
+	},
+	"errorExpected": false,
+	"with": [
+		{
+			"courses_dept": "adhe"
+		},
+		{
+			"courses_dept": "anth"
+		},
+		{
+			"courses_dept": "apbi"
+		},
+		{
+			"courses_dept": "apsc"
+		},
+		{
+			"courses_dept": "arcl"
+		},
+		{
+			"courses_dept": "arth"
+		},
+		{
+			"courses_dept": "asia"
+		},
+		{
+			"courses_dept": "astr"
+		},
+		{
+			"courses_dept": "astu"
+		},
+		{
+			"courses_dept": "atsc"
+		},
+		{
+			"courses_dept": "ba"
+		},
+		{
+			"courses_dept": "baac"
+		},
+		{
+			"courses_dept": "babs"
+		},
+		{
+			"courses_dept": "bafi"
+		},
+		{
+			"courses_dept": "bahr"
+		},
+		{
+			"courses_dept": "bama"
+		},
+		{
+			"courses_dept": "bapa"
+		},
+		{
+			"courses_dept": "basc"
+		},
+		{
+			"courses_dept": "basm"
+		},
+		{
+			"courses_dept": "bioc"
+		},
+		{
+			"courses_dept": "biol"
+		},
+		{
+			"courses_dept": "busi"
+		},
+		{
+			"courses_dept": "caps"
+		},
+		{
+			"courses_dept": "cens"
+		},
+		{
+			"courses_dept": "chbe"
+		},
+		{
+			"courses_dept": "chem"
+		},
+		{
+			"courses_dept": "chin"
+		},
+		{
+			"courses_dept": "civl"
+		},
+		{
+			"courses_dept": "clst"
+		},
+		{
+			"courses_dept": "cnps"
+		},
+		{
+			"courses_dept": "coec"
+		},
+		{
+			"courses_dept": "cogs"
+		},
+		{
+			"courses_dept": "comm"
+		},
+		{
+			"courses_dept": "cons"
+		},
+		{
+			"courses_dept": "cpen"
+		},
+		{
+			"courses_dept": "cpsc"
+		},
+		{
+			"courses_dept": "crwr"
+		},
+		{
+			"courses_dept": "econ"
+		},
+		{
+			"courses_dept": "edcp"
+		},
+		{
+			"courses_dept": "educ"
+		},
+		{
+			"courses_dept": "elec"
+		},
+		{
+			"courses_dept": "ends"
+		},
+		{
+			"courses_dept": "engl"
+		},
+		{
+			"courses_dept": "eosc"
+		},
+		{
+			"courses_dept": "epse"
+		},
+		{
+			"courses_dept": "etec"
+		},
+		{
+			"courses_dept": "fist"
+		},
+		{
+			"courses_dept": "fmst"
+		},
+		{
+			"courses_dept": "fnh"
+		},
+		{
+			"courses_dept": "fre"
+		},
+		{
+			"courses_dept": "fren"
+		},
+		{
+			"courses_dept": "frst"
+		},
+		{
+			"courses_dept": "geob"
+		},
+		{
+			"courses_dept": "geog"
+		},
+		{
+			"courses_dept": "germ"
+		},
+		{
+			"courses_dept": "grsj"
+		},
+		{
+			"courses_dept": "hist"
+		},
+		{
+			"courses_dept": "ital"
+		},
+		{
+			"courses_dept": "japn"
+		},
+		{
+			"courses_dept": "kin"
+		},
+		{
+			"courses_dept": "latn"
+		},
+		{
+			"courses_dept": "law"
+		},
+		{
+			"courses_dept": "lfs"
+		},
+		{
+			"courses_dept": "ling"
+		},
+		{
+			"courses_dept": "lled"
+		},
+		{
+			"courses_dept": "math"
+		},
+		{
+			"courses_dept": "mech"
+		},
+		{
+			"courses_dept": "micb"
+		},
+		{
+			"courses_dept": "mine"
+		},
+		{
+			"courses_dept": "musc"
+		},
+		{
+			"courses_dept": "nest"
+		},
+		{
+			"courses_dept": "nurs"
+		},
+		{
+			"courses_dept": "path"
+		},
+		{
+			"courses_dept": "pcth"
+		},
+		{
+			"courses_dept": "phar"
+		},
+		{
+			"courses_dept": "phil"
+		},
+		{
+			"courses_dept": "phrm"
+		},
+		{
+			"courses_dept": "phys"
+		},
+		{
+			"courses_dept": "poli"
+		},
+		{
+			"courses_dept": "psyc"
+		},
+		{
+			"courses_dept": "relg"
+		},
+		{
+			"courses_dept": "russ"
+		},
+		{
+			"courses_dept": "scie"
+		},
+		{
+			"courses_dept": "soci"
+		},
+		{
+			"courses_dept": "sowk"
+		},
+		{
+			"courses_dept": "span"
+		},
+		{
+			"courses_dept": "spph"
+		},
+		{
+			"courses_dept": "stat"
+		},
+		{
+			"courses_dept": "thtr"
+		},
+		{
+			"courses_dept": "vant"
+		},
+		{
+			"courses_dept": "visa"
+		},
+		{
+			"courses_dept": "wrds"
+		}
+	]
+}

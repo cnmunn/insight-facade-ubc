@@ -1,0 +1,283 @@
+{
+  "title": "should return correct result if the IS clause contains two wildcards",
+  "input": {
+    "WHERE": {
+      "IS": {
+        "courses_title": "*time*"
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_title"
+      ]
+    }
+  },
+  "errorExpected": false,
+  "with": [
+    {
+      "courses_dept": "eece",
+      "courses_title": "multimedia sys"
+    },
+    {
+      "courses_dept": "eece",
+      "courses_title": "multimedia sys"
+    },
+    {
+      "courses_dept": "eece",
+      "courses_title": "multimedia sys"
+    },
+    {
+      "courses_dept": "eece",
+      "courses_title": "multimedia sys"
+    },
+    {
+      "courses_dept": "eece",
+      "courses_title": "multimedia sys"
+    },
+    {
+      "courses_dept": "eece",
+      "courses_title": "multimedia sys"
+    },
+    {
+      "courses_dept": "eece",
+      "courses_title": "multimedia sys"
+    },
+    {
+      "courses_dept": "eece",
+      "courses_title": "multimedia sys"
+    },
+    {
+      "courses_dept": "eece",
+      "courses_title": "multimedia sys"
+    },
+    {
+      "courses_dept": "eece",
+      "courses_title": "multimedia sys"
+    },
+    {
+      "courses_dept": "eece",
+      "courses_title": "multimedia sys"
+    },
+    {
+      "courses_dept": "eece",
+      "courses_title": "multimedia sys"
+    },
+    {
+      "courses_dept": "eece",
+      "courses_title": "multimedia sys"
+    },
+    {
+      "courses_dept": "eece",
+      "courses_title": "multimedia sys"
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_title": "geo time & strat"
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_title": "geo time & strat"
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_title": "geological time"
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_title": "geological time"
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_title": "geological time"
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_title": "geological time"
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_title": "geo time & strat"
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_title": "geo time & strat"
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_title": "geo time & strat"
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_title": "geo time & strat"
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_title": "geo time & strat"
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_title": "geo time & strat"
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_title": "geological time"
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_title": "geological time"
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_title": "geological time"
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_title": "geological time"
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_title": "geological time"
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_title": "geological time"
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_title": "anl time series"
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_title": "anl time series"
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_title": "anl time series"
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_title": "anl time series"
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_title": "anl time series"
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_title": "anl time series"
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_title": "anl time series"
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_title": "anl time series"
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_title": "anl time series"
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_title": "anl time series"
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_title": "anl time series"
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_title": "anl time series"
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_title": "anl time series"
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_title": "anl time series"
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_title": "anl time series"
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_title": "anl time series"
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_title": "anl time series"
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_title": "anl time series"
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_title": "anl time series"
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_title": "anl time series"
+    },
+    {
+      "courses_dept": "stat",
+      "courses_title": "time srs forcast"
+    },
+    {
+      "courses_dept": "stat",
+      "courses_title": "time srs forcast"
+    },
+    {
+      "courses_dept": "stat",
+      "courses_title": "time srs forcast"
+    },
+    {
+      "courses_dept": "stat",
+      "courses_title": "time srs forcast"
+    },
+    {
+      "courses_dept": "stat",
+      "courses_title": "time srs forcast"
+    },
+    {
+      "courses_dept": "stat",
+      "courses_title": "time srs forcast"
+    },
+    {
+      "courses_dept": "stat",
+      "courses_title": "time srs forcast"
+    },
+    {
+      "courses_dept": "stat",
+      "courses_title": "time srs forcast"
+    },
+    {
+      "courses_dept": "stat",
+      "courses_title": "time srs forcast"
+    },
+    {
+      "courses_dept": "stat",
+      "courses_title": "time srs forcast"
+    },
+    {
+      "courses_dept": "stat",
+      "courses_title": "time srs forcast"
+    },
+    {
+      "courses_dept": "stat",
+      "courses_title": "time srs forcast"
+    },
+    {
+      "courses_dept": "stat",
+      "courses_title": "time srs forcast"
+    },
+    {
+      "courses_dept": "stat",
+      "courses_title": "time srs forcast"
+    }
+  ]
+}

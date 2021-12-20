@@ -1,0 +1,17 @@
+{
+  "title": "should throw InsightError if MCOMPARATOR (GT) is not an object",
+  "input": {
+    "WHERE":{
+      "GT": 3
+    },
+    "OPTIONS":{
+      "COLUMNS":[
+        "courses_dept",
+        "courses_avg"
+      ],
+      "ORDER":"courses_avg"
+    }
+  },
+  "errorExpected": true,
+  "with": "InsightError"
+}

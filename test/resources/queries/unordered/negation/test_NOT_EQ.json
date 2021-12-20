@@ -1,0 +1,171 @@
+{
+  "title": "should return correct result when NOT is applied to EQ",
+  "input": {
+	  "WHERE": {
+		  "AND": [
+			  {
+				  "IS": {
+					  "courses_dept": "anat"
+				  }
+			  },
+			  {
+				  "NOT": {
+					  "EQ": {
+						  "courses_year": 2012
+					  }
+				  }
+			  }
+		  ]
+	  },
+	  "OPTIONS": {
+		  "COLUMNS": [
+			  "courses_year",
+			  "courses_title",
+			  "courses_avg"
+		  ]
+	  }
+  },
+  "errorExpected": false,
+  "with": [
+	  {
+		  "courses_year": 2013,
+		  "courses_title": "gross anat limbs",
+		  "courses_avg": 81.82
+	  },
+	  {
+		  "courses_year": 1900,
+		  "courses_title": "gross anat limbs",
+		  "courses_avg": 81.82
+	  },
+	  {
+		  "courses_year": 2014,
+		  "courses_title": "gross anat limbs",
+		  "courses_avg": 83.65
+	  },
+	  {
+		  "courses_year": 1900,
+		  "courses_title": "gross anat limbs",
+		  "courses_avg": 83.65
+	  },
+	  {
+		  "courses_year": 1900,
+		  "courses_title": "gross anat limbs",
+		  "courses_avg": 83.34
+	  },
+	  {
+		  "courses_year": 2009,
+		  "courses_title": "gross anat limbs",
+		  "courses_avg": 83.74
+	  },
+	  {
+		  "courses_year": 1900,
+		  "courses_title": "gross anat limbs",
+		  "courses_avg": 83.74
+	  },
+	  {
+		  "courses_year": 2007,
+		  "courses_title": "gross anat limbs",
+		  "courses_avg": 81.41
+	  },
+	  {
+		  "courses_year": 1900,
+		  "courses_title": "gross anat limbs",
+		  "courses_avg": 81.41
+	  },
+	  {
+		  "courses_year": 2016,
+		  "courses_title": "gross anat limbs",
+		  "courses_avg": 86.29
+	  },
+	  {
+		  "courses_year": 1900,
+		  "courses_title": "gross anat limbs",
+		  "courses_avg": 86.29
+	  },
+	  {
+		  "courses_year": 2011,
+		  "courses_title": "gross anat limbs",
+		  "courses_avg": 82.29
+	  },
+	  {
+		  "courses_year": 1900,
+		  "courses_title": "gross anat limbs",
+		  "courses_avg": 82.29
+	  },
+	  {
+		  "courses_year": 2010,
+		  "courses_title": "gross anat limbs",
+		  "courses_avg": 80.28
+	  },
+	  {
+		  "courses_year": 1900,
+		  "courses_title": "gross anat limbs",
+		  "courses_avg": 80.28
+	  },
+	  {
+		  "courses_year": 2015,
+		  "courses_title": "gross anat limbs",
+		  "courses_avg": 81.71
+	  },
+	  {
+		  "courses_year": 1900,
+		  "courses_title": "gross anat limbs",
+		  "courses_avg": 81.71
+	  },
+	  {
+		  "courses_year": 2013,
+		  "courses_title": "fnd bdy dsgn:bsc",
+		  "courses_avg": 83.6
+	  },
+	  {
+		  "courses_year": 1900,
+		  "courses_title": "fnd bdy dsgn:bsc",
+		  "courses_avg": 83.6
+	  },
+	  {
+		  "courses_year": 2014,
+		  "courses_title": "fnd bdy dsgn:bsc",
+		  "courses_avg": 92
+	  },
+	  {
+		  "courses_year": 1900,
+		  "courses_title": "fnd bdy dsgn:bsc",
+		  "courses_avg": 92
+	  },
+	  {
+		  "courses_year": 1900,
+		  "courses_title": "fnd bdy dsgn:bsc",
+		  "courses_avg": 85.4
+	  },
+	  {
+		  "courses_year": 2015,
+		  "courses_title": "fnc hmn ant h&n",
+		  "courses_avg": 91.67
+	  },
+	  {
+		  "courses_year": 1900,
+		  "courses_title": "fnc hmn ant h&n",
+		  "courses_avg": 91.67
+	  },
+	  {
+		  "courses_year": 2009,
+		  "courses_title": "fnc hmn ant musc",
+		  "courses_avg": 86.67
+	  },
+	  {
+		  "courses_year": 1900,
+		  "courses_title": "fnc hmn ant musc",
+		  "courses_avg": 86.67
+	  },
+	  {
+		  "courses_year": 2015,
+		  "courses_title": "fnc hmn ant musc",
+		  "courses_avg": 89.6
+	  },
+	  {
+		  "courses_year": 1900,
+		  "courses_title": "fnc hmn ant musc",
+		  "courses_avg": 89.6
+	  }
+  ]
+}

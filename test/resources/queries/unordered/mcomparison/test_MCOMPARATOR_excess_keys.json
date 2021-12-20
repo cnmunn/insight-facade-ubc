@@ -1,0 +1,20 @@
+{
+  "title": "should throw InsightError if MCOMPARATOR (GT) contains more than 1 key",
+  "input": {
+    "WHERE":{
+      "GT":{
+        "courses_avg": 80,
+        "courses_pass": 20
+      }
+    },
+    "OPTIONS":{
+      "COLUMNS":[
+        "courses_dept",
+        "courses_pass",
+        "courses_fail"
+      ]
+    }
+  },
+  "errorExpected": true,
+  "with": "InsightError"
+}

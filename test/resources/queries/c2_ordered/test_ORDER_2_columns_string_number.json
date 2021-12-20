@@ -1,0 +1,71 @@
+{
+	"title": "should be able to SORT by a string column, then a numeric column (descending)",
+	"input": {
+		"WHERE": {
+			"AND": [
+				{
+					"IS": {
+						"rooms_shortname": "A*"
+					}
+				},
+				{
+					"LT": {
+						"rooms_seats": 30
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"rooms_shortname",
+				"rooms_seats"
+			],
+			"ORDER": {
+				"dir": "DOWN",
+				"keys": [
+					"rooms_shortname",
+					"rooms_seats"
+				]
+			}
+		}
+	},
+	"errorExpected": false,
+	"with": [
+		{
+			"rooms_shortname": "AUDX",
+			"rooms_seats": 21
+		},
+		{
+			"rooms_shortname": "AUDX",
+			"rooms_seats": 20
+		},
+		{
+			"rooms_shortname": "ANSO",
+			"rooms_seats": 26
+		},
+		{
+			"rooms_shortname": "ANGU",
+			"rooms_seats": 20
+		},
+		{
+			"rooms_shortname": "ANGU",
+			"rooms_seats": 16
+		},
+		{
+			"rooms_shortname": "ANGU",
+			"rooms_seats": 16
+		},
+		{
+			"rooms_shortname": "ANGU",
+			"rooms_seats": 16
+		},
+		{
+			"rooms_shortname": "ALRD",
+			"rooms_seats": 20
+		},
+		{
+			"rooms_shortname": "ALRD",
+			"rooms_seats": 20
+		}
+	]
+}

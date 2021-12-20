@@ -1,0 +1,36 @@
+{
+  "title": "should return correct result if AND clause has 2 conditions",
+  "input": {
+    "WHERE": {
+      "AND": [
+        {
+          "IS": {
+            "courses_id": "3*"
+          }
+        },
+        {
+          "IS": {
+            "courses_instructor": "handelsman, simon"
+          }
+        }
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_id",
+        "courses_instructor"
+      ]
+    }
+  },
+  "errorExpected": false,
+  "with": [
+    {
+      "courses_id": "302",
+      "courses_instructor": "handelsman, simon"
+    },
+    {
+      "courses_id": "396",
+      "courses_instructor": "handelsman, simon"
+    }
+  ]
+}

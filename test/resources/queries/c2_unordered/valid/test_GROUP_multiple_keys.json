@@ -1,0 +1,70 @@
+{
+	"title": "can GROUP by 4 columns with an empty APPLY",
+	"input": {
+		"WHERE": {
+			"AND": [
+				{
+					"IS": {
+						"courses_id": "3*"
+					}
+				},
+				{
+					"GT": {
+						"courses_fail": 50
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"courses_dept",
+				"courses_id",
+				"courses_year",
+				"courses_instructor"
+			]
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"courses_dept",
+				"courses_id",
+				"courses_year",
+				"courses_instructor"
+			],
+			"APPLY": [
+			]
+		}
+	},
+	"errorExpected": false,
+	"with": [
+		{
+			"courses_dept": "biol",
+			"courses_id": "335",
+			"courses_year": 2007,
+			"courses_instructor": "beatty, thomas j.;berezowsky, craig m s;grigliatti, thomas;haughn, george"
+		},
+		{
+			"courses_dept": "biol",
+			"courses_id": "335",
+			"courses_year": 1900,
+			"courses_instructor": ""
+		},
+		{
+			"courses_dept": "busi",
+			"courses_id": "330",
+			"courses_year": 1900,
+			"courses_instructor": ""
+		},
+		{
+			"courses_dept": "clst",
+			"courses_id": "301",
+			"courses_year": 1900,
+			"courses_instructor": ""
+		},
+		{
+			"courses_dept": "psyc",
+			"courses_id": "307",
+			"courses_year": 1900,
+			"courses_instructor": ""
+		}
+	]
+}

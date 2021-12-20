@@ -1,0 +1,17 @@
+{
+	"title": "should throw InsightError if the query tests Rooms fields in Courses queries",
+	"input": {
+		"WHERE": {
+			"IS": {
+				"courses_shortname": "DMP*"
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"courses_title"
+			]
+		}
+	},
+	"errorExpected": true,
+	"with": "InsightError"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "should throw InsightError if NOT contains an invalid FILTER key",
+  "input": {
+    "WHERE":{
+      "NOT": {
+        "TL": {
+          "courses_fail": 50
+        }
+      }
+    },
+    "OPTIONS":{
+      "COLUMNS":[
+        "courses_dept",
+        "courses_pass",
+        "courses_fail"
+      ]
+    }
+  },
+  "errorExpected": true,
+  "with": "InsightError"
+}

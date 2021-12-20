@@ -1,0 +1,18 @@
+{
+  "title": "should throw InsightError if COLUMNS contains a nonexistent column",
+  "input": {
+    "WHERE": {
+      "GT": {
+        "courses_avg": 99
+      }
+    },
+    "OPTIONS":{
+      "COLUMNS":[
+        "courses_dept",
+        "courses_average"
+      ]
+    }
+  },
+  "errorExpected": true,
+  "with": "InsightError"
+}

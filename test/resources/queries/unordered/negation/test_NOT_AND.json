@@ -1,0 +1,481 @@
+{
+  "title": "should return correct result when NOT is applied to an AND",
+  "input": {
+    "WHERE": {
+      "NOT": {
+        "AND": [
+          {
+            "GT": {
+              "courses_avg": 50
+            }
+          },
+          {
+            "LT": {
+              "courses_fail": 150
+            }
+          }
+        ]
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_title",
+        "courses_avg",
+        "courses_fail"
+      ]
+    }
+  },
+  "errorExpected": false,
+  "with": [
+    {
+      "courses_title": "biol bact cell",
+      "courses_avg": 67.77,
+      "courses_fail": 162
+    },
+    {
+      "courses_title": "biology of cell",
+      "courses_avg": 70.02,
+      "courses_fail": 150
+    },
+    {
+      "courses_title": "unicellular life",
+      "courses_avg": 68.77,
+      "courses_fail": 230
+    },
+    {
+      "courses_title": "gentcs ecol&evol",
+      "courses_avg": 66.78,
+      "courses_fail": 162
+    },
+    {
+      "courses_title": "cell biology 1",
+      "courses_avg": 64.98,
+      "courses_fail": 196
+    },
+    {
+      "courses_title": "cell biology 1",
+      "courses_avg": 64.73,
+      "courses_fail": 204
+    },
+    {
+      "courses_title": "found re apprai",
+      "courses_avg": 4,
+      "courses_fail": 1
+    },
+    {
+      "courses_title": "found re apprai",
+      "courses_avg": 4,
+      "courses_fail": 1
+    },
+    {
+      "courses_title": "stat&comp ap val",
+      "courses_avg": 49.47,
+      "courses_fail": 35
+    },
+    {
+      "courses_title": "stat&comp ap val",
+      "courses_avg": 49.47,
+      "courses_fail": 35
+    },
+    {
+      "courses_title": "resdnt prp study",
+      "courses_avg": 49.17,
+      "courses_fail": 8
+    },
+    {
+      "courses_title": "resdnt prp study",
+      "courses_avg": 42.64,
+      "courses_fail": 5
+    },
+    {
+      "courses_title": "resdnt prp study",
+      "courses_avg": 42.64,
+      "courses_fail": 5
+    },
+    {
+      "courses_title": "rl es manage i",
+      "courses_avg": 50,
+      "courses_fail": 2
+    },
+    {
+      "courses_title": "cpt aid ms pr as",
+      "courses_avg": 46.5,
+      "courses_fail": 4
+    },
+    {
+      "courses_title": "re crit analysis",
+      "courses_avg": 46.95,
+      "courses_fail": 7
+    },
+    {
+      "courses_title": "proc ctrl eng",
+      "courses_avg": 50,
+      "courses_fail": 0
+    },
+    {
+      "courses_title": "electrochem eng",
+      "courses_avg": 42,
+      "courses_fail": 3
+    },
+    {
+      "courses_title": "electrochem eng",
+      "courses_avg": 44.88,
+      "courses_fail": 3
+    },
+    {
+      "courses_title": "structural chem",
+      "courses_avg": 67.42,
+      "courses_fail": 266
+    },
+    {
+      "courses_title": "strctr bond chem",
+      "courses_avg": 68.72,
+      "courses_fail": 264
+    },
+    {
+      "courses_title": "structural chem",
+      "courses_avg": 70.97,
+      "courses_fail": 192
+    },
+    {
+      "courses_title": "structural chem",
+      "courses_avg": 70.22,
+      "courses_fail": 235
+    },
+    {
+      "courses_title": "structural chem",
+      "courses_avg": 69.3,
+      "courses_fail": 250
+    },
+    {
+      "courses_title": "structural chem",
+      "courses_avg": 68.2,
+      "courses_fail": 287
+    },
+    {
+      "courses_title": "structural chem",
+      "courses_avg": 68.77,
+      "courses_fail": 260
+    },
+    {
+      "courses_title": "strctr bond chem",
+      "courses_avg": 69.41,
+      "courses_fail": 251
+    },
+    {
+      "courses_title": "phys & org chem",
+      "courses_avg": 70.36,
+      "courses_fail": 157
+    },
+    {
+      "courses_title": "phys & org chem",
+      "courses_avg": 68.93,
+      "courses_fail": 168
+    },
+    {
+      "courses_title": "org chem biol sc",
+      "courses_avg": 67.02,
+      "courses_fail": 175
+    },
+    {
+      "courses_title": "org chem biol sc",
+      "courses_avg": 63.33,
+      "courses_fail": 213
+    },
+    {
+      "courses_title": "org chem biol sc",
+      "courses_avg": 63.31,
+      "courses_fail": 188
+    },
+    {
+      "courses_title": "org chem biol sc",
+      "courses_avg": 67.89,
+      "courses_fail": 186
+    },
+    {
+      "courses_title": "org chem biol sc",
+      "courses_avg": 64.94,
+      "courses_fail": 226
+    },
+    {
+      "courses_title": "org chem biol sc",
+      "courses_avg": 64.6,
+      "courses_fail": 190
+    },
+    {
+      "courses_title": "chem integ lab i",
+      "courses_avg": 42.5,
+      "courses_fail": 3
+    },
+    {
+      "courses_title": "engr econ anlys",
+      "courses_avg": 33,
+      "courses_fail": 3
+    },
+    {
+      "courses_title": "wtr treat&wst mg",
+      "courses_avg": 49.25,
+      "courses_fail": 1
+    },
+    {
+      "courses_title": "financial acctng",
+      "courses_avg": 46.71,
+      "courses_fail": 4
+    },
+    {
+      "courses_title": "financial acctng",
+      "courses_avg": 49.07,
+      "courses_fail": 8
+    },
+    {
+      "courses_title": "comptn, progrmng",
+      "courses_avg": 72.28,
+      "courses_fail": 157
+    },
+    {
+      "courses_title": "comptn, progrmng",
+      "courses_avg": 71.22,
+      "courses_fail": 150
+    },
+    {
+      "courses_title": "comptn, progrmng",
+      "courses_avg": 73.25,
+      "courses_fail": 190
+    },
+    {
+      "courses_title": "prncpls micrecon",
+      "courses_avg": 67.24,
+      "courses_fail": 221
+    },
+    {
+      "courses_title": "prncpls micrecon",
+      "courses_avg": 68.48,
+      "courses_fail": 181
+    },
+    {
+      "courses_title": "prncpls micrecon",
+      "courses_avg": 66.86,
+      "courses_fail": 172
+    },
+    {
+      "courses_title": "princpl macrecon",
+      "courses_avg": 69.62,
+      "courses_fail": 187
+    },
+    {
+      "courses_title": "princpl macrecon",
+      "courses_avg": 67.58,
+      "courses_fail": 187
+    },
+    {
+      "courses_title": "princpl macrecon",
+      "courses_avg": 68.27,
+      "courses_fail": 166
+    },
+    {
+      "courses_title": "language & curr",
+      "courses_avg": 39.03,
+      "courses_fail": 34
+    },
+    {
+      "courses_title": "language & curr",
+      "courses_avg": 39.03,
+      "courses_fail": 34
+    },
+    {
+      "courses_title": "sustnbt&frst ops",
+      "courses_avg": 4.5,
+      "courses_fail": 4
+    },
+    {
+      "courses_title": "forest ecology",
+      "courses_avg": 0,
+      "courses_fail": 1
+    },
+    {
+      "courses_title": "intr biometrics",
+      "courses_avg": 46.59,
+      "courses_fail": 6
+    },
+    {
+      "courses_title": "intr biometrics",
+      "courses_avg": 49.14,
+      "courses_fail": 2
+    },
+    {
+      "courses_title": "hist 1500 - 20 c",
+      "courses_avg": 34,
+      "courses_fail": 1
+    },
+    {
+      "courses_title": "hist 1500 - 20 c",
+      "courses_avg": 49.15,
+      "courses_fail": 4
+    },
+    {
+      "courses_title": "hist 1500 - 20 c",
+      "courses_avg": 47.13,
+      "courses_fail": 5
+    },
+    {
+      "courses_title": "hist 1500 - 20 c",
+      "courses_avg": 46.33,
+      "courses_fail": 6
+    },
+    {
+      "courses_title": "hist 1500 - 20 c",
+      "courses_avg": 46.33,
+      "courses_fail": 6
+    },
+    {
+      "courses_title": "in land food com",
+      "courses_avg": 0,
+      "courses_fail": 1
+    },
+    {
+      "courses_title": "in land food com",
+      "courses_avg": 0,
+      "courses_fail": 1
+    },
+    {
+      "courses_title": "intro acad writ",
+      "courses_avg": 48.9,
+      "courses_fail": 4
+    },
+    {
+      "courses_title": "intro acad writ",
+      "courses_avg": 49.73,
+      "courses_fail": 6
+    },
+    {
+      "courses_title": "intro acad writ",
+      "courses_avg": 49.86,
+      "courses_fail": 5
+    },
+    {
+      "courses_title": "intro acad writ",
+      "courses_avg": 47.29,
+      "courses_fail": 5
+    },
+    {
+      "courses_title": "intro acad writ",
+      "courses_avg": 47.82,
+      "courses_fail": 3
+    },
+    {
+      "courses_title": "int calc ap ph s",
+      "courses_avg": 66.12,
+      "courses_fail": 180
+    },
+    {
+      "courses_title": "int calc ap ph s",
+      "courses_avg": 65.38,
+      "courses_fail": 222
+    },
+    {
+      "courses_title": "int calc ap ph s",
+      "courses_avg": 64.55,
+      "courses_fail": 203
+    },
+    {
+      "courses_title": "int calc ap ph s",
+      "courses_avg": 65.21,
+      "courses_fail": 193
+    },
+    {
+      "courses_title": "int calc ap ph s",
+      "courses_avg": 66.31,
+      "courses_fail": 190
+    },
+    {
+      "courses_title": "int calc ap ph s",
+      "courses_avg": 65.99,
+      "courses_fail": 205
+    },
+    {
+      "courses_title": "int calc ap ph s",
+      "courses_avg": 63.51,
+      "courses_fail": 186
+    },
+    {
+      "courses_title": "int calc ap ph s",
+      "courses_avg": 66.28,
+      "courses_fail": 190
+    },
+    {
+      "courses_title": "int calc ap c&ss",
+      "courses_avg": 62.88,
+      "courses_fail": 170
+    },
+    {
+      "courses_title": "dif calc phys ap",
+      "courses_avg": 46.52,
+      "courses_fail": 9
+    },
+    {
+      "courses_title": "dif calc phys ap",
+      "courses_avg": 49.95,
+      "courses_fail": 7
+    },
+    {
+      "courses_title": "log & crit think",
+      "courses_avg": 33.2,
+      "courses_fail": 5
+    },
+    {
+      "courses_title": "energy & waves",
+      "courses_avg": 69.62,
+      "courses_fail": 171
+    },
+    {
+      "courses_title": "energy & waves",
+      "courses_avg": 71.85,
+      "courses_fail": 177
+    },
+    {
+      "courses_title": "energy & waves",
+      "courses_avg": 70.63,
+      "courses_fail": 184
+    },
+    {
+      "courses_title": "energy & waves",
+      "courses_avg": 71.52,
+      "courses_fail": 162
+    },
+    {
+      "courses_title": "energy & waves",
+      "courses_avg": 71.43,
+      "courses_fail": 171
+    },
+    {
+      "courses_title": "bio cog psych",
+      "courses_avg": 69.14,
+      "courses_fail": 172
+    },
+    {
+      "courses_title": "bio cog psych",
+      "courses_avg": 68.41,
+      "courses_fail": 175
+    },
+    {
+      "courses_title": "bio cog psych",
+      "courses_avg": 69.15,
+      "courses_fail": 169
+    },
+    {
+      "courses_title": "health psycholgy",
+      "courses_avg": 43.33,
+      "courses_fail": 1
+    },
+    {
+      "courses_title": "childhood & adol",
+      "courses_avg": 50,
+      "courses_fail": 0
+    },
+    {
+      "courses_title": "prpty,ident&uses",
+      "courses_avg": 1,
+      "courses_fail": 2
+    }
+  ]
+}

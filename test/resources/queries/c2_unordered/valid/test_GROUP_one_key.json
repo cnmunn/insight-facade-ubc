@@ -1,0 +1,108 @@
+{
+	"title": "can GROUP by one column with an empty APPLY",
+	"input": {
+		"WHERE": {
+			"GT": {
+				"rooms_seats": 100
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"rooms_shortname"
+			]
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"rooms_shortname"
+			],
+			"APPLY": []
+		}
+	},
+	"errorExpected": false,
+	"with": [
+		{
+			"rooms_shortname": "AERL"
+		},
+		{
+			"rooms_shortname": "BIOL"
+		},
+		{
+			"rooms_shortname": "BUCH"
+		},
+		{
+			"rooms_shortname": "CIRS"
+		},
+		{
+			"rooms_shortname": "CHBE"
+		},
+		{
+			"rooms_shortname": "CHEM"
+		},
+		{
+			"rooms_shortname": "ESB"
+		},
+		{
+			"rooms_shortname": "FSC"
+		},
+		{
+			"rooms_shortname": "FRDM"
+		},
+		{
+			"rooms_shortname": "GEOG"
+		},
+		{
+			"rooms_shortname": "HEBB"
+		},
+		{
+			"rooms_shortname": "HENN"
+		},
+		{
+			"rooms_shortname": "ANGU"
+		},
+		{
+			"rooms_shortname": "DMP"
+		},
+		{
+			"rooms_shortname": "IBLC"
+		},
+		{
+			"rooms_shortname": "LSK"
+		},
+		{
+			"rooms_shortname": "LSC"
+		},
+		{
+			"rooms_shortname": "MCLD"
+		},
+		{
+			"rooms_shortname": "MCML"
+		},
+		{
+			"rooms_shortname": "MATH"
+		},
+		{
+			"rooms_shortname": "MATX"
+		},
+		{
+			"rooms_shortname": "SCRF"
+		},
+		{
+			"rooms_shortname": "PHRM"
+		},
+		{
+			"rooms_shortname": "OSBO"
+		},
+		{
+			"rooms_shortname": "SRC"
+		},
+		{
+			"rooms_shortname": "WESB"
+		},
+		{
+			"rooms_shortname": "SWNG"
+		},
+		{
+			"rooms_shortname": "WOOD"
+		}
+	]
+}

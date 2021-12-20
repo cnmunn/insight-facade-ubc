@@ -1,0 +1,26 @@
+{
+  "title": "should throw InsightError if an element of LOGIC (OR) contains more than 1 FILTER key",
+  "input": {
+    "WHERE":{
+      "OR":[
+        {
+          "GT": {
+            "courses_avg": 95
+          },
+          "LT": {
+            "courses_avg": 98
+          }
+        }
+      ]
+    },
+    "OPTIONS":{
+      "COLUMNS":[
+        "courses_dept",
+        "courses_avg"
+      ],
+      "ORDER":"courses_avg"
+    }
+  },
+  "errorExpected": true,
+  "with": "InsightError"
+}

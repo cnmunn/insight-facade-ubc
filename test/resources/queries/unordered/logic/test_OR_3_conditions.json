@@ -1,0 +1,114 @@
+{
+  "title": "should return correct result if OR clause has 3 conditions",
+  "input": {
+    "WHERE": {
+      "OR": [
+        {
+          "EQ": {
+            "courses_audit": 10
+          }
+        },
+        {
+          "IS": {
+            "courses_dept": "appp"
+          }
+        },
+        {
+          "GT": {
+            "courses_avg": 99
+          }
+        }
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_id",
+        "courses_avg"
+      ]
+    }
+  },
+  "errorExpected": false,
+  "with": [
+    {
+      "courses_dept": "appp",
+      "courses_id": "501",
+      "courses_avg": 85.16
+    },
+    {
+      "courses_dept": "appp",
+      "courses_id": "501",
+      "courses_avg": 85.16
+    },
+    {
+      "courses_dept": "appp",
+      "courses_id": "502",
+      "courses_avg": 81.64
+    },
+    {
+      "courses_dept": "appp",
+      "courses_id": "502",
+      "courses_avg": 81.64
+    },
+    {
+      "courses_dept": "appp",
+      "courses_id": "503",
+      "courses_avg": 77.99
+    },
+    {
+      "courses_dept": "appp",
+      "courses_id": "503",
+      "courses_avg": 77.99
+    },
+    {
+      "courses_dept": "appp",
+      "courses_id": "505",
+      "courses_avg": 78
+    },
+    {
+      "courses_dept": "appp",
+      "courses_id": "505",
+      "courses_avg": 78
+    },
+    {
+      "courses_dept": "cnps",
+      "courses_id": "574",
+      "courses_avg": 99.19
+    },
+    {
+      "courses_dept": "frst",
+      "courses_id": "430",
+      "courses_avg": 77.36
+    },
+    {
+      "courses_dept": "frst",
+      "courses_id": "530",
+      "courses_avg": 85.14
+    },
+    {
+      "courses_dept": "frst",
+      "courses_id": "530",
+      "courses_avg": 85.14
+    },
+    {
+      "courses_dept": "math",
+      "courses_id": "527",
+      "courses_avg": 99.78
+    },
+    {
+      "courses_dept": "math",
+      "courses_id": "527",
+      "courses_avg": 99.78
+    },
+    {
+      "courses_dept": "rhsc",
+      "courses_id": "501",
+      "courses_avg": 91.4
+    },
+    {
+      "courses_dept": "rhsc",
+      "courses_id": "509",
+      "courses_avg": 85.73
+    }
+  ]
+}

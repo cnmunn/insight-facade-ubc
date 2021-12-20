@@ -1,0 +1,17 @@
+{
+  "title": "should throw ResultTooLargeError on an unspecific search",
+  "input": {
+    "WHERE": {
+      "IS": {
+        "courses_dept": "c*"
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept"
+      ]
+    }
+  },
+  "errorExpected": true,
+  "with": "ResultTooLargeError"
+}

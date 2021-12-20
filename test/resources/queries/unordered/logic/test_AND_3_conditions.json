@@ -1,0 +1,50 @@
+{
+  "title": "should return correct result if AND clause has 3 conditions",
+  "input": {
+    "WHERE":{
+      "AND":[
+        {
+          "LT": {
+            "courses_avg": 50
+          }
+        },
+        {
+          "IS": {
+            "courses_dept": "math"
+          }
+        },
+        {
+          "GT": {
+            "courses_avg": 40
+          }
+        }
+      ]
+    },
+    "OPTIONS":{
+      "COLUMNS":[
+        "courses_year",
+        "courses_pass",
+        "courses_fail",
+        "courses_audit",
+        "courses_avg"
+      ]
+    }
+  },
+  "errorExpected": false,
+  "with": [
+    {
+      "courses_year": 2008,
+      "courses_pass": 14,
+      "courses_fail": 9,
+      "courses_audit": 0,
+      "courses_avg": 46.52
+    },
+    {
+      "courses_year": 2008,
+      "courses_pass": 14,
+      "courses_fail": 7,
+      "courses_audit": 0,
+      "courses_avg": 49.95
+    }
+  ]
+}

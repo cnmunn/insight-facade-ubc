@@ -1,0 +1,198 @@
+{
+  "title": "should return correct result when NOT is applied to an IS with 1 wildcard at the start",
+  "input": {
+	  "WHERE": {
+		  "AND": [
+			  {
+				  "IS": {
+					  "courses_dept": "caps"
+				  }
+			  },
+			  {
+				  "NOT": {
+					  "IS": {
+						  "courses_id": "4*"
+					  }
+				  }
+			  }
+		  ]
+	  },
+	  "OPTIONS": {
+		  "COLUMNS": [
+			  "courses_id",
+			  "courses_title"
+		  ]
+	  }
+  },
+  "errorExpected": false,
+  "with": [
+	  {
+		  "courses_id": "200",
+		  "courses_title": "biom rsrch skill"
+	  },
+	  {
+		  "courses_id": "200",
+		  "courses_title": "biom rsrch skill"
+	  },
+	  {
+		  "courses_id": "200",
+		  "courses_title": "biom rsrch skill"
+	  },
+	  {
+		  "courses_id": "200",
+		  "courses_title": "biom rsrch skill"
+	  },
+	  {
+		  "courses_id": "301",
+		  "courses_title": "human physiology"
+	  },
+	  {
+		  "courses_id": "301",
+		  "courses_title": "human physiology"
+	  },
+	  {
+		  "courses_id": "301",
+		  "courses_title": "human physiology"
+	  },
+	  {
+		  "courses_id": "301",
+		  "courses_title": "human physiology"
+	  },
+	  {
+		  "courses_id": "301",
+		  "courses_title": "human physiology"
+	  },
+	  {
+		  "courses_id": "301",
+		  "courses_title": "human physiology"
+	  },
+	  {
+		  "courses_id": "301",
+		  "courses_title": "human physiology"
+	  },
+	  {
+		  "courses_id": "301",
+		  "courses_title": "human physiology"
+	  },
+	  {
+		  "courses_id": "301",
+		  "courses_title": "human physiology"
+	  },
+	  {
+		  "courses_id": "301",
+		  "courses_title": "human physiology"
+	  },
+	  {
+		  "courses_id": "301",
+		  "courses_title": "human physiology"
+	  },
+	  {
+		  "courses_id": "301",
+		  "courses_title": "human physiology"
+	  },
+	  {
+		  "courses_id": "303",
+		  "courses_title": "hnrs human phyl"
+	  },
+	  {
+		  "courses_id": "303",
+		  "courses_title": "hnrs human phyl"
+	  },
+	  {
+		  "courses_id": "303",
+		  "courses_title": "hnrs human phyl"
+	  },
+	  {
+		  "courses_id": "303",
+		  "courses_title": "hnrs human phyl"
+	  },
+	  {
+		  "courses_id": "303",
+		  "courses_title": "hnrs human phyl"
+	  },
+	  {
+		  "courses_id": "303",
+		  "courses_title": "hnrs human phyl"
+	  },
+	  {
+		  "courses_id": "390",
+		  "courses_title": "intr mcr hum ant"
+	  },
+	  {
+		  "courses_id": "390",
+		  "courses_title": "intr mcr hum ant"
+	  },
+	  {
+		  "courses_id": "390",
+		  "courses_title": "intr mcr hum ant"
+	  },
+	  {
+		  "courses_id": "390",
+		  "courses_title": "intr mcr hum ant"
+	  },
+	  {
+		  "courses_id": "390",
+		  "courses_title": "intr mcr hum ant"
+	  },
+	  {
+		  "courses_id": "390",
+		  "courses_title": "intr mcr hum ant"
+	  },
+	  {
+		  "courses_id": "390",
+		  "courses_title": "intr mcr hum ant"
+	  },
+	  {
+		  "courses_id": "390",
+		  "courses_title": "intr mcr hum ant"
+	  },
+	  {
+		  "courses_id": "390",
+		  "courses_title": "intr mcr hum ant"
+	  },
+	  {
+		  "courses_id": "390",
+		  "courses_title": "intr mcr hum ant"
+	  },
+	  {
+		  "courses_id": "391",
+		  "courses_title": "intr grs hum ant"
+	  },
+	  {
+		  "courses_id": "391",
+		  "courses_title": "intr grs hum ant"
+	  },
+	  {
+		  "courses_id": "391",
+		  "courses_title": "intr grs hum ant"
+	  },
+	  {
+		  "courses_id": "391",
+		  "courses_title": "intr grs hum ant"
+	  },
+	  {
+		  "courses_id": "391",
+		  "courses_title": "intr grs hum ant"
+	  },
+	  {
+		  "courses_id": "391",
+		  "courses_title": "intr grs hum ant"
+	  },
+	  {
+		  "courses_id": "391",
+		  "courses_title": "intr grs hum ant"
+	  },
+	  {
+		  "courses_id": "391",
+		  "courses_title": "intr grs hum ant"
+	  },
+	  {
+		  "courses_id": "391",
+		  "courses_title": "intr grs hum ant"
+	  },
+	  {
+		  "courses_id": "391",
+		  "courses_title": "intr grs hum ant"
+	  }
+  ]
+}

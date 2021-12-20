@@ -1,0 +1,18 @@
+{
+  "title": "should throw InsightError if a key refers to a nonexistent field",
+  "input": {
+    "WHERE":{
+      "IS":{
+        "courses_dept": "cpsc"
+      }
+    },
+    "OPTIONS":{
+      "COLUMNS":[
+        "courses_dept",
+        "courses_null"
+      ]
+    }
+  },
+  "errorExpected": true,
+  "with": "InsightError"
+}

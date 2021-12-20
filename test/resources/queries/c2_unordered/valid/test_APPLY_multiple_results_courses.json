@@ -1,0 +1,153 @@
+{
+	"title": "can compute multiple APPLY columns (on a courses dataset)",
+	"input": {
+		"WHERE": {
+			"GT": {
+				"courses_avg": 97
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"maxAvg",
+				"minFail",
+				"courses_id",
+				"courses_dept"
+			]
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"courses_dept",
+				"courses_id"
+			],
+			"APPLY": [
+				{
+					"maxAvg": {
+						"MAX": "courses_avg"
+					}
+				},
+				{
+					"minFail": {
+						"MIN": "courses_fail"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": false,
+	"with": [
+		{
+			"maxAvg": 99.19,
+			"minFail": 0,
+			"courses_id": "574",
+			"courses_dept": "cnps"
+		},
+		{
+			"maxAvg": 98,
+			"minFail": 0,
+			"courses_id": "599",
+			"courses_dept": "crwr"
+		},
+		{
+			"maxAvg": 97.5,
+			"minFail": 0,
+			"courses_id": "500",
+			"courses_dept": "educ"
+		},
+		{
+			"maxAvg": 98.75,
+			"minFail": 0,
+			"courses_id": "541",
+			"courses_dept": "eece"
+		},
+		{
+			"maxAvg": 98.7,
+			"minFail": 0,
+			"courses_id": "421",
+			"courses_dept": "epse"
+		},
+		{
+			"maxAvg": 98.8,
+			"minFail": 0,
+			"courses_id": "449",
+			"courses_dept": "epse"
+		},
+		{
+			"maxAvg": 98.45,
+			"minFail": 0,
+			"courses_id": "519",
+			"courses_dept": "epse"
+		},
+		{
+			"maxAvg": 97.78,
+			"minFail": 0,
+			"courses_id": "534",
+			"courses_dept": "epse"
+		},
+		{
+			"maxAvg": 97.69,
+			"minFail": 0,
+			"courses_id": "549",
+			"courses_dept": "epse"
+		},
+		{
+			"maxAvg": 97.09,
+			"minFail": 0,
+			"courses_id": "596",
+			"courses_dept": "epse"
+		},
+		{
+			"maxAvg": 97.67,
+			"minFail": 0,
+			"courses_id": "606",
+			"courses_dept": "epse"
+		},
+		{
+			"maxAvg": 97.25,
+			"minFail": 0,
+			"courses_id": "525",
+			"courses_dept": "math"
+		},
+		{
+			"maxAvg": 99.78,
+			"minFail": 0,
+			"courses_id": "527",
+			"courses_dept": "math"
+		},
+		{
+			"maxAvg": 97.48,
+			"minFail": 0,
+			"courses_id": "532",
+			"courses_dept": "math"
+		},
+		{
+			"maxAvg": 97.09,
+			"minFail": 0,
+			"courses_id": "541",
+			"courses_dept": "math"
+		},
+		{
+			"maxAvg": 98.71,
+			"minFail": 0,
+			"courses_id": "509",
+			"courses_dept": "nurs"
+		},
+		{
+			"maxAvg": 98.58,
+			"minFail": 0,
+			"courses_id": "578",
+			"courses_dept": "nurs"
+		},
+		{
+			"maxAvg": 97.33,
+			"minFail": 0,
+			"courses_id": "591",
+			"courses_dept": "nurs"
+		},
+		{
+			"maxAvg": 98.98,
+			"minFail": 0,
+			"courses_id": "300",
+			"courses_dept": "spph"
+		}
+	]
+}

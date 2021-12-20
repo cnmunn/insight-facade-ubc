@@ -1,0 +1,120 @@
+{
+	"title": "should be able to SORT on the result of applykeys",
+	"input": {
+		"WHERE": {
+			"GT": {
+				"courses_avg": 97
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"maxAverage",
+				"count"
+			],
+			"ORDER": {
+				"dir": "DOWN",
+				"keys": [
+					"maxAverage",
+					"count"
+				]
+			}
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"courses_dept",
+				"courses_id"
+			],
+			"APPLY": [
+				{
+					"count": {
+						"COUNT": "courses_avg"
+					}
+				},
+				{
+					"maxAverage": {
+						"MAX": "courses_avg"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": false,
+	"with": [
+		{
+			"maxAverage": 99.78,
+			"count": 1
+		},
+		{
+			"maxAverage": 99.19,
+			"count": 2
+		},
+		{
+			"maxAverage": 98.98,
+			"count": 1
+		},
+		{
+			"maxAverage": 98.8,
+			"count": 4
+		},
+		{
+			"maxAverage": 98.75,
+			"count": 1
+		},
+		{
+			"maxAverage": 98.71,
+			"count": 2
+		},
+		{
+			"maxAverage": 98.7,
+			"count": 4
+		},
+		{
+			"maxAverage": 98.58,
+			"count": 3
+		},
+		{
+			"maxAverage": 98.45,
+			"count": 1
+		},
+		{
+			"maxAverage": 98,
+			"count": 1
+		},
+		{
+			"maxAverage": 97.78,
+			"count": 2
+		},
+		{
+			"maxAverage": 97.69,
+			"count": 1
+		},
+		{
+			"maxAverage": 97.67,
+			"count": 1
+		},
+		{
+			"maxAverage": 97.5,
+			"count": 1
+		},
+		{
+			"maxAverage": 97.48,
+			"count": 1
+		},
+		{
+			"maxAverage": 97.33,
+			"count": 1
+		},
+		{
+			"maxAverage": 97.25,
+			"count": 1
+		},
+		{
+			"maxAverage": 97.09,
+			"count": 1
+		},
+		{
+			"maxAverage": 97.09,
+			"count": 1
+		}
+	]
+}

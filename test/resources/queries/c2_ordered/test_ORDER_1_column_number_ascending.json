@@ -1,0 +1,93 @@
+{
+	"title": "should be able to SORT 1 number column in ascending order using an object",
+	"input": {
+		"WHERE": {
+			"GT": {
+				"rooms_seats": 200
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"rooms_lat"
+			],
+			"ORDER": {
+				"dir": "UP",
+				"keys": [
+					"rooms_lat"
+				]
+			}
+		}
+	},
+	"errorExpected": false,
+	"with": [
+		{
+			"rooms_lat": 49.26044
+		},
+		{
+			"rooms_lat": 49.26047
+		},
+		{
+			"rooms_lat": 49.26207
+		},
+		{
+			"rooms_lat": 49.26229
+		},
+		{
+			"rooms_lat": 49.26236
+		},
+		{
+			"rooms_lat": 49.26236
+		},
+		{
+			"rooms_lat": 49.26274
+		},
+		{
+			"rooms_lat": 49.26398
+		},
+		{
+			"rooms_lat": 49.26478
+		},
+		{
+			"rooms_lat": 49.26479
+		},
+		{
+			"rooms_lat": 49.26486
+		},
+		{
+			"rooms_lat": 49.26517
+		},
+		{
+			"rooms_lat": 49.26545
+		},
+		{
+			"rooms_lat": 49.2659
+		},
+		{
+			"rooms_lat": 49.2659
+		},
+		{
+			"rooms_lat": 49.26605
+		},
+		{
+			"rooms_lat": 49.2661
+		},
+		{
+			"rooms_lat": 49.26627
+		},
+		{
+			"rooms_lat": 49.266463
+		},
+		{
+			"rooms_lat": 49.26826
+		},
+		{
+			"rooms_lat": 49.2683
+		},
+		{
+			"rooms_lat": 49.2683
+		},
+		{
+			"rooms_lat": 49.2683
+		}
+	]
+}

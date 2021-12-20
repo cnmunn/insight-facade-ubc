@@ -1,0 +1,74 @@
+{
+  "title": "should return correct result when NOT is applied to an OR",
+  "input": {
+    "WHERE": {
+      "NOT": {
+        "OR": [
+          {
+            "EQ": {
+              "courses_year": 1900
+            }
+          },
+          {
+            "LT": {
+              "courses_pass": 1000
+            }
+          }
+        ]
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_uuid",
+        "courses_title",
+        "courses_year",
+        "courses_pass"
+      ]
+    }
+  },
+  "errorExpected": false,
+  "with": [
+    {
+      "courses_uuid": "19599",
+      "courses_title": "fund cell bio",
+      "courses_year": 2011,
+      "courses_pass": 1087
+    },
+    {
+      "courses_uuid": "20550",
+      "courses_title": "fund cell bio",
+      "courses_year": 2012,
+      "courses_pass": 1084
+    },
+    {
+      "courses_uuid": "42129",
+      "courses_title": "fund cell bio",
+      "courses_year": 2014,
+      "courses_pass": 1126
+    },
+    {
+      "courses_uuid": "54044",
+      "courses_title": "fund cell bio",
+      "courses_year": 2010,
+      "courses_pass": 1158
+    },
+    {
+      "courses_uuid": "55065",
+      "courses_title": "fund cell bio",
+      "courses_year": 2015,
+      "courses_pass": 1174
+    },
+    {
+      "courses_uuid": "72065",
+      "courses_title": "fund cell bio",
+      "courses_year": 2013,
+      "courses_pass": 1126
+    },
+    {
+      "courses_uuid": "88960",
+      "courses_title": "cell biology 1",
+      "courses_year": 2009,
+      "courses_pass": 1026
+    }
+  ]
+}

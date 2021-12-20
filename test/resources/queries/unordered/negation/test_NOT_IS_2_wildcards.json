@@ -1,0 +1,222 @@
+{
+  "title": "should return correct result when NOT is applied to an IS with start and end wildcards",
+  "input": {
+	  "WHERE": {
+		  "AND": [
+			  {
+				  "IS": {
+					  "courses_dept": "caps"
+				  }
+			  },
+			  {
+				  "NOT": {
+					  "IS": {
+						  "courses_id": "*0*"
+					  }
+				  }
+			  }
+		  ]
+	  },
+	  "OPTIONS": {
+		  "COLUMNS": [
+			  "courses_id",
+			  "courses_title"
+		  ]
+	  }
+  },
+  "errorExpected": false,
+  "with": [
+	  {
+		  "courses_id": "391",
+		  "courses_title": "intr grs hum ant"
+	  },
+	  {
+		  "courses_id": "391",
+		  "courses_title": "intr grs hum ant"
+	  },
+	  {
+		  "courses_id": "391",
+		  "courses_title": "intr grs hum ant"
+	  },
+	  {
+		  "courses_id": "391",
+		  "courses_title": "intr grs hum ant"
+	  },
+	  {
+		  "courses_id": "391",
+		  "courses_title": "intr grs hum ant"
+	  },
+	  {
+		  "courses_id": "391",
+		  "courses_title": "intr grs hum ant"
+	  },
+	  {
+		  "courses_id": "391",
+		  "courses_title": "intr grs hum ant"
+	  },
+	  {
+		  "courses_id": "391",
+		  "courses_title": "intr grs hum ant"
+	  },
+	  {
+		  "courses_id": "391",
+		  "courses_title": "intr grs hum ant"
+	  },
+	  {
+		  "courses_id": "391",
+		  "courses_title": "intr grs hum ant"
+	  },
+	  {
+		  "courses_id": "421",
+		  "courses_title": "adv cel&mol phys"
+	  },
+	  {
+		  "courses_id": "421",
+		  "courses_title": "adv cel&mol phys"
+	  },
+	  {
+		  "courses_id": "421",
+		  "courses_title": "adv cel&mol phys"
+	  },
+	  {
+		  "courses_id": "421",
+		  "courses_title": "adv cel&mol phys"
+	  },
+	  {
+		  "courses_id": "421",
+		  "courses_title": "adv cel&mol phys"
+	  },
+	  {
+		  "courses_id": "421",
+		  "courses_title": "adv cel&mol phys"
+	  },
+	  {
+		  "courses_id": "421",
+		  "courses_title": "adv cel&mol phys"
+	  },
+	  {
+		  "courses_id": "421",
+		  "courses_title": "adv cel&mol phys"
+	  },
+	  {
+		  "courses_id": "422",
+		  "courses_title": "cardio&resp phyl"
+	  },
+	  {
+		  "courses_id": "422",
+		  "courses_title": "cardio&resp phyl"
+	  },
+	  {
+		  "courses_id": "422",
+		  "courses_title": "cardio&resp phyl"
+	  },
+	  {
+		  "courses_id": "422",
+		  "courses_title": "cardio&resp phyl"
+	  },
+	  {
+		  "courses_id": "422",
+		  "courses_title": "cardio&resp phyl"
+	  },
+	  {
+		  "courses_id": "422",
+		  "courses_title": "cardio&resp phyl"
+	  },
+	  {
+		  "courses_id": "423",
+		  "courses_title": "renl&gastro phyl"
+	  },
+	  {
+		  "courses_id": "423",
+		  "courses_title": "renl&gastro phyl"
+	  },
+	  {
+		  "courses_id": "423",
+		  "courses_title": "renl&gastro phyl"
+	  },
+	  {
+		  "courses_id": "423",
+		  "courses_title": "renl&gastro phyl"
+	  },
+	  {
+		  "courses_id": "423",
+		  "courses_title": "renl&gastro phyl"
+	  },
+	  {
+		  "courses_id": "423",
+		  "courses_title": "renl&gastro phyl"
+	  },
+	  {
+		  "courses_id": "424",
+		  "courses_title": "mam endocrinolgy"
+	  },
+	  {
+		  "courses_id": "424",
+		  "courses_title": "mam endocrinolgy"
+	  },
+	  {
+		  "courses_id": "424",
+		  "courses_title": "mam endocrinolgy"
+	  },
+	  {
+		  "courses_id": "424",
+		  "courses_title": "mam endocrinolgy"
+	  },
+	  {
+		  "courses_id": "424",
+		  "courses_title": "mam endocrinolgy"
+	  },
+	  {
+		  "courses_id": "424",
+		  "courses_title": "mam endocrinolgy"
+	  },
+	  {
+		  "courses_id": "426",
+		  "courses_title": "adv neurophyl"
+	  },
+	  {
+		  "courses_id": "426",
+		  "courses_title": "adv neurophyl"
+	  },
+	  {
+		  "courses_id": "426",
+		  "courses_title": "adv neurophyl"
+	  },
+	  {
+		  "courses_id": "426",
+		  "courses_title": "adv neurophyl"
+	  },
+	  {
+		  "courses_id": "426",
+		  "courses_title": "adv neurophyl"
+	  },
+	  {
+		  "courses_id": "426",
+		  "courses_title": "adv neurophyl"
+	  },
+	  {
+		  "courses_id": "449",
+		  "courses_title": "grad essay"
+	  },
+	  {
+		  "courses_id": "449",
+		  "courses_title": "grad essay"
+	  },
+	  {
+		  "courses_id": "449",
+		  "courses_title": "grad essay"
+	  },
+	  {
+		  "courses_id": "449",
+		  "courses_title": "grad essay"
+	  },
+	  {
+		  "courses_id": "449",
+		  "courses_title": "grad essay"
+	  },
+	  {
+		  "courses_id": "449",
+		  "courses_title": "grad essay"
+	  }
+  ]
+}

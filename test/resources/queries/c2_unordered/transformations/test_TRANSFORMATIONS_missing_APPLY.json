@@ -1,0 +1,19 @@
+{
+	"title": "should throw InsightError if TRANSFORMATIONS contains only GROUP",
+	"input": {
+		"WHERE": {},
+		"OPTIONS": {
+			"COLUMNS": [
+				"courses_title",
+				"overallAvg"
+			]
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"courses_title"
+			]
+		}
+	},
+	"errorExpected": true,
+	"with": "InsightError"
+}

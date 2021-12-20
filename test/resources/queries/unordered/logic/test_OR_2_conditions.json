@@ -1,0 +1,120 @@
+{
+  "title": "should return correct result if OR clause has 2 conditions",
+  "input": {
+    "WHERE": {
+      "OR": [
+        {
+          "IS": {
+            "courses_id": "396"
+          }
+        },
+        {
+          "IS": {
+            "courses_instructor": "handelsman, simon"
+          }
+        }
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_id",
+        "courses_instructor"
+      ]
+    }
+  },
+  "errorExpected": false,
+  "with": [
+    {
+      "courses_id": "396",
+      "courses_instructor": "li, duanduan"
+    },
+    {
+      "courses_id": "396",
+      "courses_instructor": ""
+    },
+    {
+      "courses_id": "396",
+      "courses_instructor": "li, duanduan"
+    },
+    {
+      "courses_id": "396",
+      "courses_instructor": ""
+    },
+    {
+      "courses_id": "396",
+      "courses_instructor": "li, duanduan"
+    },
+    {
+      "courses_id": "396",
+      "courses_instructor": ""
+    },
+    {
+      "courses_id": "302",
+      "courses_instructor": "handelsman, simon"
+    },
+    {
+      "courses_id": "396",
+      "courses_instructor": "lopes da costa, jose"
+    },
+    {
+      "courses_id": "396",
+      "courses_instructor": ""
+    },
+    {
+      "courses_id": "396",
+      "courses_instructor": "dunbar, w scott"
+    },
+    {
+      "courses_id": "396",
+      "courses_instructor": ""
+    },
+    {
+      "courses_id": "396",
+      "courses_instructor": "lopes da costa, jose"
+    },
+    {
+      "courses_id": "396",
+      "courses_instructor": ""
+    },
+    {
+      "courses_id": "396",
+      "courses_instructor": "handelsman, simon"
+    },
+    {
+      "courses_id": "396",
+      "courses_instructor": ""
+    },
+    {
+      "courses_id": "396",
+      "courses_instructor": "dunbar, w scott"
+    },
+    {
+      "courses_id": "396",
+      "courses_instructor": ""
+    },
+    {
+      "courses_id": "396",
+      "courses_instructor": "dunbar, w scott"
+    },
+    {
+      "courses_id": "396",
+      "courses_instructor": ""
+    },
+    {
+      "courses_id": "396",
+      "courses_instructor": "dunbar, w scott"
+    },
+    {
+      "courses_id": "396",
+      "courses_instructor": ""
+    },
+    {
+      "courses_id": "553",
+      "courses_instructor": "handelsman, simon"
+    },
+    {
+      "courses_id": "554",
+      "courses_instructor": "handelsman, simon"
+    }
+  ]
+}

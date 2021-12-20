@@ -1,0 +1,17 @@
+{
+  "title": "should throw InsightError if MCOMPARATOR (EQ) clause references a non-existent field",
+  "input": {
+    "WHERE":{
+      "EQ":{
+        "courses_average": 50
+      }
+    },
+    "OPTIONS":{
+      "COLUMNS":[
+        "courses_dept"
+      ]
+    }
+  },
+  "errorExpected": true,
+  "with": "InsightError"
+}

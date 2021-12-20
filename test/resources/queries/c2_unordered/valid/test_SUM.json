@@ -1,0 +1,100 @@
+{
+	"title": "can successfully apply SUM to a group",
+	"input": {
+		"WHERE": {
+			"AND": [
+				{
+					"IS": {
+						"courses_dept": "cpsc"
+					}
+				},
+				{
+					"IS": {
+						"courses_id": "3*"
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"courses_title",
+				"sumAverages"
+			]
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"courses_title"
+			],
+			"APPLY": [
+				{
+					"sumAverages": {
+						"SUM": "courses_avg"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": false,
+	"with": [
+		{
+			"courses_title": "comptng life sci",
+			"sumAverages": 1145.72
+		},
+		{
+			"courses_title": "num comp alg prb",
+			"sumAverages": 1359.2
+		},
+		{
+			"courses_title": "num approx/discr",
+			"sumAverages": 1309.7
+		},
+		{
+			"courses_title": "intr rel databse",
+			"sumAverages": 3128.23
+		},
+		{
+			"courses_title": "intr sftwr eng",
+			"sumAverages": 3051.73
+		},
+		{
+			"courses_title": "programmng langs",
+			"sumAverages": 1390.44
+		},
+		{
+			"courses_title": "func & logic prg",
+			"sumAverages": 1614.16
+		},
+		{
+			"courses_title": "comp hard&os",
+			"sumAverages": 2589.4
+		},
+		{
+			"courses_title": "comp graphics",
+			"sumAverages": 2073.03
+		},
+		{
+			"courses_title": "internet comp",
+			"sumAverages": 1959.28
+		},
+		{
+			"courses_title": "softwr eng proj",
+			"sumAverages": 1521.28
+		},
+		{
+			"courses_title": "intr alg dsgn&an",
+			"sumAverages": 2313.12
+		},
+		{
+			"courses_title": "artificial intel",
+			"sumAverages": 2266.48
+		},
+		{
+			"courses_title": "machine lrn mine",
+			"sumAverages": 1513.82
+		},
+		{
+			"courses_title": "hum-com interact",
+			"sumAverages": 1491
+		}
+	]
+}

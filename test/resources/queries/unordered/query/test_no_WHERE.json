@@ -1,0 +1,14 @@
+{
+  "title": "should throw InsightError if query has no WHERE clause",
+  "input": {
+    "OPTIONS":{
+      "COLUMNS":[
+        "courses_dept",
+        "courses_avg"
+      ],
+      "ORDER":"courses_avg"
+    }
+  },
+  "errorExpected": true,
+  "with": "InsightError"
+}

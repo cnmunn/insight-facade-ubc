@@ -1,0 +1,16 @@
+{
+  "title": "should throw InsightError if IS is an empty object",
+  "input": {
+    "WHERE":{
+      "IS":{}
+    },
+    "OPTIONS":{
+      "COLUMNS":[
+        "courses_dept",
+        "courses_title"
+      ]
+    }
+  },
+  "errorExpected": true,
+  "with": "InsightError"
+}

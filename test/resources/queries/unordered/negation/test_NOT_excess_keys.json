@@ -1,0 +1,24 @@
+{
+  "title": "should throw InsightError if NOT contains more than 1 key",
+  "input": {
+    "WHERE":{
+      "NOT": {
+        "LT": {
+          "courses_fail": 50
+        },
+        "GT":{
+          "courses_avg": 80
+        }
+      }
+    },
+    "OPTIONS":{
+      "COLUMNS":[
+        "courses_dept",
+        "courses_pass",
+        "courses_fail"
+      ]
+    }
+  },
+  "errorExpected": true,
+  "with": "InsightError"
+}

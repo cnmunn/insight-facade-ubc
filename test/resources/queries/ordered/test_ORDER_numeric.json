@@ -1,0 +1,228 @@
+{
+  "title": "should return correct result when ordering by a numeric column",
+  "input": {
+    "WHERE": {
+      "IS": {
+        "courses_title": "*cnstr*"
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_title",
+        "courses_avg"
+      ],
+      "ORDER": "courses_avg"
+    }
+  },
+  "errorExpected": false,
+  "with": [
+    {
+      "courses_title": "prjct cnstr econ",
+      "courses_avg": 72.08
+    },
+    {
+      "courses_title": "prjct cnstr econ",
+      "courses_avg": 72.08
+    },
+    {
+      "courses_title": "cnstr plan cntrl",
+      "courses_avg": 78.15
+    },
+    {
+      "courses_title": "cnstr plan cntrl",
+      "courses_avg": 78.15
+    },
+    {
+      "courses_title": "prjct cnstr econ",
+      "courses_avg": 78.33
+    },
+    {
+      "courses_title": "prjct cnstr econ",
+      "courses_avg": 78.33
+    },
+    {
+      "courses_title": "cnstr plan cntrl",
+      "courses_avg": 78.68
+    },
+    {
+      "courses_title": "cnstr plan cntrl",
+      "courses_avg": 78.68
+    },
+    {
+      "courses_title": "cnstr plan cntrl",
+      "courses_avg": 79.12
+    },
+    {
+      "courses_title": "cnstr plan cntrl",
+      "courses_avg": 79.12
+    },
+    {
+      "courses_title": "legal cnstr mngt",
+      "courses_avg": 79.66
+    },
+    {
+      "courses_title": "legal cnstr mngt",
+      "courses_avg": 79.66
+    },
+    {
+      "courses_title": "prjct cnstr econ",
+      "courses_avg": 80
+    },
+    {
+      "courses_title": "prjct cnstr econ",
+      "courses_avg": 80
+    },
+    {
+      "courses_title": "legal cnstr mngt",
+      "courses_avg": 80.03
+    },
+    {
+      "courses_title": "legal cnstr mngt",
+      "courses_avg": 80.03
+    },
+    {
+      "courses_title": "legal cnstr mngt",
+      "courses_avg": 80.17
+    },
+    {
+      "courses_title": "legal cnstr mngt",
+      "courses_avg": 80.17
+    },
+    {
+      "courses_title": "prjct cnstr econ",
+      "courses_avg": 80.4
+    },
+    {
+      "courses_title": "prjct cnstr econ",
+      "courses_avg": 80.4
+    },
+    {
+      "courses_title": "prjct cnstr econ",
+      "courses_avg": 80.44
+    },
+    {
+      "courses_title": "prjct cnstr econ",
+      "courses_avg": 80.44
+    },
+    {
+      "courses_title": "cnstr plan cntrl",
+      "courses_avg": 80.48
+    },
+    {
+      "courses_title": "cnstr plan cntrl",
+      "courses_avg": 80.48
+    },
+    {
+      "courses_title": "cnstr plan cntrl",
+      "courses_avg": 80.67
+    },
+    {
+      "courses_title": "cnstr plan cntrl",
+      "courses_avg": 80.67
+    },
+    {
+      "courses_title": "legal cnstr mngt",
+      "courses_avg": 80.76
+    },
+    {
+      "courses_title": "legal cnstr mngt",
+      "courses_avg": 80.76
+    },
+    {
+      "courses_title": "cnstr plan cntrl",
+      "courses_avg": 80.82
+    },
+    {
+      "courses_title": "cnstr plan cntrl",
+      "courses_avg": 80.82
+    },
+    {
+      "courses_title": "legal cnstr mngt",
+      "courses_avg": 81.11
+    },
+    {
+      "courses_title": "legal cnstr mngt",
+      "courses_avg": 81.11
+    },
+    {
+      "courses_title": "cnstr plan cntrl",
+      "courses_avg": 81.42
+    },
+    {
+      "courses_title": "cnstr plan cntrl",
+      "courses_avg": 81.42
+    },
+    {
+      "courses_title": "cnstr plan cntrl",
+      "courses_avg": 82
+    },
+    {
+      "courses_title": "cnstr plan cntrl",
+      "courses_avg": 82
+    },
+    {
+      "courses_title": "legal cnstr mngt",
+      "courses_avg": 82.12
+    },
+    {
+      "courses_title": "legal cnstr mngt",
+      "courses_avg": 82.12
+    },
+    {
+      "courses_title": "legal cnstr mngt",
+      "courses_avg": 82.3
+    },
+    {
+      "courses_title": "legal cnstr mngt",
+      "courses_avg": 82.3
+    },
+    {
+      "courses_title": "legal cnstr mngt",
+      "courses_avg": 83.47
+    },
+    {
+      "courses_title": "legal cnstr mngt",
+      "courses_avg": 83.47
+    },
+    {
+      "courses_title": "prjct cnstr econ",
+      "courses_avg": 83.64
+    },
+    {
+      "courses_title": "prjct cnstr econ",
+      "courses_avg": 83.64
+    },
+    {
+      "courses_title": "legal cnstr mngt",
+      "courses_avg": 83.87
+    },
+    {
+      "courses_title": "legal cnstr mngt",
+      "courses_avg": 83.87
+    },
+    {
+      "courses_title": "prjct cnstr econ",
+      "courses_avg": 84.5
+    },
+    {
+      "courses_title": "prjct cnstr econ",
+      "courses_avg": 84.5
+    },
+    {
+      "courses_title": "prjct cnstr econ",
+      "courses_avg": 84.67
+    },
+    {
+      "courses_title": "prjct cnstr econ",
+      "courses_avg": 84.67
+    },
+    {
+      "courses_title": "prjct cnstr econ",
+      "courses_avg": 88.73
+    },
+    {
+      "courses_title": "prjct cnstr econ",
+      "courses_avg": 88.73
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "title": "should return correct result on a query involving EQ",
+  "input": {
+    "WHERE": {
+      "EQ": {
+        "courses_audit": 10
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_year",
+        "courses_dept",
+        "courses_audit"
+      ]
+    }
+  },
+  "errorExpected": false,
+  "with": [
+    {
+      "courses_year": 1900,
+      "courses_dept": "frst",
+      "courses_audit": 10
+    },
+    {
+      "courses_year": 2015,
+      "courses_dept": "frst",
+      "courses_audit": 10
+    },
+    {
+      "courses_year": 1900,
+      "courses_dept": "frst",
+      "courses_audit": 10
+    },
+    {
+      "courses_year": 2010,
+      "courses_dept": "rhsc",
+      "courses_audit": 10
+    },
+    {
+      "courses_year": 1900,
+      "courses_dept": "rhsc",
+      "courses_audit": 10
+    }
+  ]
+}

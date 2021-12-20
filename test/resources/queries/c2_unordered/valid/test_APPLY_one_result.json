@@ -1,0 +1,183 @@
+{
+	"title": "can compute one APPLY column",
+	"input": {
+		"WHERE": {
+			"GT": {
+				"rooms_seats": 100
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"rooms_shortname",
+				"rooms_type",
+				"numRooms"
+			]
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"rooms_shortname",
+				"rooms_type"
+			],
+			"APPLY": [
+				{
+					"numRooms": {
+						"COUNT": "rooms_name"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": false,
+	"with": [
+		{
+			"rooms_shortname": "AERL",
+			"rooms_type": "Tiered Large Group",
+			"numRooms": 1
+		},
+		{
+			"rooms_shortname": "BIOL",
+			"rooms_type": "Tiered Large Group",
+			"numRooms": 1
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"rooms_type": "Tiered Large Group",
+			"numRooms": 5
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"rooms_type": "Case Style",
+			"numRooms": 2
+		},
+		{
+			"rooms_shortname": "CIRS",
+			"rooms_type": "Tiered Large Group",
+			"numRooms": 1
+		},
+		{
+			"rooms_shortname": "CHBE",
+			"rooms_type": "Tiered Large Group",
+			"numRooms": 1
+		},
+		{
+			"rooms_shortname": "CHEM",
+			"rooms_type": "Tiered Large Group",
+			"numRooms": 4
+		},
+		{
+			"rooms_shortname": "ESB",
+			"rooms_type": "Tiered Large Group",
+			"numRooms": 2
+		},
+		{
+			"rooms_shortname": "FSC",
+			"rooms_type": "Tiered Large Group",
+			"numRooms": 1
+		},
+		{
+			"rooms_shortname": "FRDM",
+			"rooms_type": "Tiered Large Group",
+			"numRooms": 1
+		},
+		{
+			"rooms_shortname": "GEOG",
+			"rooms_type": "Tiered Large Group",
+			"numRooms": 1
+		},
+		{
+			"rooms_shortname": "HEBB",
+			"rooms_type": "Tiered Large Group",
+			"numRooms": 1
+		},
+		{
+			"rooms_shortname": "HENN",
+			"rooms_type": "Tiered Large Group",
+			"numRooms": 3
+		},
+		{
+			"rooms_shortname": "ANGU",
+			"rooms_type": "Tiered Large Group",
+			"numRooms": 1
+		},
+		{
+			"rooms_shortname": "DMP",
+			"rooms_type": "Tiered Large Group",
+			"numRooms": 2
+		},
+		{
+			"rooms_shortname": "IBLC",
+			"rooms_type": "Tiered Large Group",
+			"numRooms": 1
+		},
+		{
+			"rooms_shortname": "IBLC",
+			"rooms_type": "Open Design General Purpose",
+			"numRooms": 1
+		},
+		{
+			"rooms_shortname": "LSK",
+			"rooms_type": "Tiered Large Group",
+			"numRooms": 2
+		},
+		{
+			"rooms_shortname": "LSC",
+			"rooms_type": "Tiered Large Group",
+			"numRooms": 3
+		},
+		{
+			"rooms_shortname": "MCLD",
+			"rooms_type": "Tiered Large Group",
+			"numRooms": 2
+		},
+		{
+			"rooms_shortname": "MCML",
+			"rooms_type": "Tiered Large Group",
+			"numRooms": 1
+		},
+		{
+			"rooms_shortname": "MATH",
+			"rooms_type": "Tiered Large Group",
+			"numRooms": 1
+		},
+		{
+			"rooms_shortname": "MATX",
+			"rooms_type": "Tiered Large Group",
+			"numRooms": 1
+		},
+		{
+			"rooms_shortname": "SCRF",
+			"rooms_type": "Tiered Large Group",
+			"numRooms": 1
+		},
+		{
+			"rooms_shortname": "PHRM",
+			"rooms_type": "Tiered Large Group",
+			"numRooms": 2
+		},
+		{
+			"rooms_shortname": "OSBO",
+			"rooms_type": "Open Design General Purpose",
+			"numRooms": 1
+		},
+		{
+			"rooms_shortname": "SRC",
+			"rooms_type": "TBD",
+			"numRooms": 3
+		},
+		{
+			"rooms_shortname": "WESB",
+			"rooms_type": "Tiered Large Group",
+			"numRooms": 2
+		},
+		{
+			"rooms_shortname": "SWNG",
+			"rooms_type": "Tiered Large Group",
+			"numRooms": 4
+		},
+		{
+			"rooms_shortname": "WOOD",
+			"rooms_type": "Tiered Large Group",
+			"numRooms": 5
+		}
+	]
+}

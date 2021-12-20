@@ -1,0 +1,95 @@
+{
+	"title": "should be able to SORT 2 number columns (descending order)",
+	"input": {
+		"WHERE": {
+			"AND": [
+				{
+					"IS": {
+						"rooms_shortname": "M*"
+					}
+				},
+				{
+					"LT": {
+						"rooms_seats": 30
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"rooms_lat",
+				"rooms_lon"
+			],
+			"ORDER": {
+				"dir": "DOWN",
+				"keys": [
+					"rooms_lat",
+					"rooms_lon"
+				]
+			}
+		}
+	},
+	"errorExpected": false,
+	"with":  [
+		{
+			"rooms_lat": 49.266463,
+			"rooms_lon": -123.255534
+		},
+		{
+			"rooms_lat": 49.2663,
+			"rooms_lon": -123.2466
+		},
+		{
+			"rooms_lat": 49.26114,
+			"rooms_lon": -123.25027
+		},
+		{
+			"rooms_lat": 49.26114,
+			"rooms_lon": -123.25027
+		},
+		{
+			"rooms_lat": 49.26114,
+			"rooms_lon": -123.25027
+		},
+		{
+			"rooms_lat": 49.26114,
+			"rooms_lon": -123.25027
+		},
+		{
+			"rooms_lat": 49.26114,
+			"rooms_lon": -123.25027
+		},
+		{
+			"rooms_lat": 49.26114,
+			"rooms_lon": -123.25027
+		},
+		{
+			"rooms_lat": 49.26114,
+			"rooms_lon": -123.25027
+		},
+		{
+			"rooms_lat": 49.26114,
+			"rooms_lon": -123.25027
+		},
+		{
+			"rooms_lat": 49.26114,
+			"rooms_lon": -123.25027
+		},
+		{
+			"rooms_lat": 49.26114,
+			"rooms_lon": -123.25027
+		},
+		{
+			"rooms_lat": 49.26114,
+			"rooms_lon": -123.25027
+		},
+		{
+			"rooms_lat": 49.26114,
+			"rooms_lon": -123.25027
+		},
+		{
+			"rooms_lat": 49.26114,
+			"rooms_lon": -123.25027
+		}
+	]
+}

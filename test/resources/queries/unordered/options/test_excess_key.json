@@ -1,0 +1,20 @@
+{
+  "title": "should throw InsightError if OPTIONS contains more than 2 keys",
+  "input": {
+    "WHERE": {
+      "GT": {
+        "courses_avg": 99
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_avg",
+        "courses_uuid"
+      ],
+      "ORDER": "courses_uuid",
+      "BAD": 10
+    }
+  },
+  "errorExpected": true,
+  "with": "InsightError"
+}

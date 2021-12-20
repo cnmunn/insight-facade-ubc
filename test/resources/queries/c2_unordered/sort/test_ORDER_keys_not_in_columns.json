@@ -1,0 +1,25 @@
+{
+	"title": "should throw InsightError if ORDER[\"keys\"] contains a string not in COLUMNS",
+	"input": {
+		"WHERE": {
+			"IS": {
+				"rooms_furniture": "*Tables*"
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"rooms_shortname",
+				"rooms_address"
+			],
+			"ORDER": {
+				"dir": "down",
+				"keys": [
+					"rooms_shortname",
+					"rooms_seats"
+				]
+			}
+		}
+	},
+	"errorExpected": true,
+	"with": "InsightError"
+}

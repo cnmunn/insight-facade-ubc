@@ -1,0 +1,20 @@
+{
+	"title": "should throw InsightError if ORDER does not contain the 'keys' property",
+	"input": {
+		"WHERE": {
+			"IS": {
+				"rooms_furniture": "*Tables*"
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"rooms_shortname"
+			],
+			"ORDER": {
+				"dir": "DOWN"
+			}
+		}
+	},
+	"errorExpected": true,
+	"with": "InsightError"
+}

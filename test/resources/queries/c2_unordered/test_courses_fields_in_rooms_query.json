@@ -1,0 +1,18 @@
+{
+	"title": "should throw InsightError if the query tests Courses fields in Rooms queries",
+	"input": {
+		"WHERE": {
+			"IS": {
+				"rooms_id": "3*"
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"rooms_lat",
+				"rooms_lon"
+			]
+		}
+	},
+	"errorExpected": true,
+	"with": "InsightError"
+}

@@ -1,0 +1,23 @@
+{
+	"title": "should throw InsightError if ORDER[\"dir\"] is not one of \"UP\" or \"DOWN\"",
+	"input": {
+		"WHERE": {
+			"IS": {
+				"rooms_furniture": "*Tables*"
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"rooms_shortname"
+			],
+			"ORDER": {
+				"dir": "down",
+				"keys": [
+					"rooms_shortname"
+				]
+			}
+		}
+	},
+	"errorExpected": true,
+	"with": "InsightError"
+}

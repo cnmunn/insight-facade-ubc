@@ -1,0 +1,100 @@
+{
+	"title": "can successfully apply MIN to a group",
+	"input": {
+		"WHERE": {
+			"AND": [
+				{
+					"IS": {
+						"courses_dept": "cpsc"
+					}
+				},
+				{
+					"IS": {
+						"courses_id": "3*"
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"courses_title",
+				"lowestAvg"
+			]
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"courses_title"
+			],
+			"APPLY": [
+				{
+					"lowestAvg": {
+						"MIN": "courses_avg"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": false,
+	"with": [
+		{
+			"courses_title": "comptng life sci",
+			"lowestAvg": 71
+		},
+		{
+			"courses_title": "num comp alg prb",
+			"lowestAvg": 68.64
+		},
+		{
+			"courses_title": "num approx/discr",
+			"lowestAvg": 68.35
+		},
+		{
+			"courses_title": "intr rel databse",
+			"lowestAvg": 71.89
+		},
+		{
+			"courses_title": "intr sftwr eng",
+			"lowestAvg": 72.27
+		},
+		{
+			"courses_title": "programmng langs",
+			"lowestAvg": 72.83
+		},
+		{
+			"courses_title": "func & logic prg",
+			"lowestAvg": 76.52
+		},
+		{
+			"courses_title": "comp hard&os",
+			"lowestAvg": 70.46
+		},
+		{
+			"courses_title": "comp graphics",
+			"lowestAvg": 67.85
+		},
+		{
+			"courses_title": "internet comp",
+			"lowestAvg": 68.54
+		},
+		{
+			"courses_title": "softwr eng proj",
+			"lowestAvg": 78.93
+		},
+		{
+			"courses_title": "intr alg dsgn&an",
+			"lowestAvg": 66.34
+		},
+		{
+			"courses_title": "artificial intel",
+			"lowestAvg": 67.48
+		},
+		{
+			"courses_title": "machine lrn mine",
+			"lowestAvg": 68.4
+		},
+		{
+			"courses_title": "hum-com interact",
+			"lowestAvg": 73.3
+		}
+	]
+}

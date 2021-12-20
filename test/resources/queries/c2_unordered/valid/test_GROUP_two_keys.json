@@ -1,0 +1,230 @@
+{
+	"title": "can GROUP by 2 columns with an empty APPLY",
+	"input": {
+		"WHERE": {
+			"GT": {
+				"rooms_seats": 60
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"rooms_shortname",
+				"rooms_type"
+			]
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"rooms_shortname",
+				"rooms_type"
+			],
+			"APPLY": []
+		}
+	},
+	"errorExpected": false,
+	"with": [
+		{
+			"rooms_shortname": "ALRD",
+			"rooms_type": "Case Style"
+		},
+		{
+			"rooms_shortname": "ANSO",
+			"rooms_type": "Open Design General Purpose"
+		},
+		{
+			"rooms_shortname": "AERL",
+			"rooms_type": "Tiered Large Group"
+		},
+		{
+			"rooms_shortname": "BIOL",
+			"rooms_type": "Tiered Large Group"
+		},
+		{
+			"rooms_shortname": "BRKX",
+			"rooms_type": "Tiered Large Group"
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"rooms_type": "Tiered Large Group"
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"rooms_type": "Case Style"
+		},
+		{
+			"rooms_shortname": "CIRS",
+			"rooms_type": "Tiered Large Group"
+		},
+		{
+			"rooms_shortname": "CHBE",
+			"rooms_type": "Tiered Large Group"
+		},
+		{
+			"rooms_shortname": "CHEM",
+			"rooms_type": "Tiered Large Group"
+		},
+		{
+			"rooms_shortname": "CEME",
+			"rooms_type": "Tiered Large Group"
+		},
+		{
+			"rooms_shortname": "CEME",
+			"rooms_type": "Case Style"
+		},
+		{
+			"rooms_shortname": "ESB",
+			"rooms_type": "Tiered Large Group"
+		},
+		{
+			"rooms_shortname": "FNH",
+			"rooms_type": "Tiered Large Group"
+		},
+		{
+			"rooms_shortname": "FSC",
+			"rooms_type": "Case Style"
+		},
+		{
+			"rooms_shortname": "FSC",
+			"rooms_type": "Tiered Large Group"
+		},
+		{
+			"rooms_shortname": "FORW",
+			"rooms_type": "Open Design General Purpose"
+		},
+		{
+			"rooms_shortname": "LASR",
+			"rooms_type": "Tiered Large Group"
+		},
+		{
+			"rooms_shortname": "FRDM",
+			"rooms_type": "Tiered Large Group"
+		},
+		{
+			"rooms_shortname": "GEOG",
+			"rooms_type": "Tiered Large Group"
+		},
+		{
+			"rooms_shortname": "GEOG",
+			"rooms_type": "Open Design General Purpose"
+		},
+		{
+			"rooms_shortname": "HEBB",
+			"rooms_type": "Tiered Large Group"
+		},
+		{
+			"rooms_shortname": "HENN",
+			"rooms_type": "Tiered Large Group"
+		},
+		{
+			"rooms_shortname": "ANGU",
+			"rooms_type": "Tiered Large Group"
+		},
+		{
+			"rooms_shortname": "ANGU",
+			"rooms_type": "Open Design General Purpose"
+		},
+		{
+			"rooms_shortname": "DMP",
+			"rooms_type": "Tiered Large Group"
+		},
+		{
+			"rooms_shortname": "IONA",
+			"rooms_type": "Case Style"
+		},
+		{
+			"rooms_shortname": "IBLC",
+			"rooms_type": "Tiered Large Group"
+		},
+		{
+			"rooms_shortname": "IBLC",
+			"rooms_type": "Open Design General Purpose"
+		},
+		{
+			"rooms_shortname": "SOWK",
+			"rooms_type": "Open Design General Purpose"
+		},
+		{
+			"rooms_shortname": "LSK",
+			"rooms_type": "Tiered Large Group"
+		},
+		{
+			"rooms_shortname": "LSK",
+			"rooms_type": "Open Design General Purpose"
+		},
+		{
+			"rooms_shortname": "LSC",
+			"rooms_type": "Tiered Large Group"
+		},
+		{
+			"rooms_shortname": "MCLD",
+			"rooms_type": "Tiered Large Group"
+		},
+		{
+			"rooms_shortname": "MCLD",
+			"rooms_type": "Open Design General Purpose"
+		},
+		{
+			"rooms_shortname": "MCML",
+			"rooms_type": "Tiered Large Group"
+		},
+		{
+			"rooms_shortname": "MCML",
+			"rooms_type": "Case Style"
+		},
+		{
+			"rooms_shortname": "MATH",
+			"rooms_type": "Tiered Large Group"
+		},
+		{
+			"rooms_shortname": "MATX",
+			"rooms_type": "Tiered Large Group"
+		},
+		{
+			"rooms_shortname": "SCRF",
+			"rooms_type": "Tiered Large Group"
+		},
+		{
+			"rooms_shortname": "ORCH",
+			"rooms_type": "Active Learning"
+		},
+		{
+			"rooms_shortname": "ORCH",
+			"rooms_type": "Open Design General Purpose"
+		},
+		{
+			"rooms_shortname": "ORCH",
+			"rooms_type": "Studio Lab"
+		},
+		{
+			"rooms_shortname": "PHRM",
+			"rooms_type": "Tiered Large Group"
+		},
+		{
+			"rooms_shortname": "PHRM",
+			"rooms_type": "Open Design General Purpose"
+		},
+		{
+			"rooms_shortname": "OSBO",
+			"rooms_type": "Open Design General Purpose"
+		},
+		{
+			"rooms_shortname": "SPPH",
+			"rooms_type": "Open Design General Purpose"
+		},
+		{
+			"rooms_shortname": "SRC",
+			"rooms_type": "TBD"
+		},
+		{
+			"rooms_shortname": "WESB",
+			"rooms_type": "Tiered Large Group"
+		},
+		{
+			"rooms_shortname": "SWNG",
+			"rooms_type": "Tiered Large Group"
+		},
+		{
+			"rooms_shortname": "WOOD",
+			"rooms_type": "Tiered Large Group"
+		}
+	]
+}

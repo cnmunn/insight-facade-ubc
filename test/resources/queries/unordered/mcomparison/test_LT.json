@@ -1,0 +1,67 @@
+{
+  "title": "test_LT",
+  "input": {
+    "WHERE": {
+      "LT": {
+        "courses_avg": 42
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_avg",
+        "courses_pass"
+      ]
+    }
+  },
+  "errorExpected": false,
+  "with": [
+    {
+      "courses_avg": 4,
+      "courses_pass": 0
+    },
+    {
+      "courses_avg": 4,
+      "courses_pass": 0
+    },
+    {
+      "courses_avg": 33,
+      "courses_pass": 1
+    },
+    {
+      "courses_avg": 39.03,
+      "courses_pass": 39
+    },
+    {
+      "courses_avg": 39.03,
+      "courses_pass": 39
+    },
+    {
+      "courses_avg": 4.5,
+      "courses_pass": 0
+    },
+    {
+      "courses_avg": 0,
+      "courses_pass": 0
+    },
+    {
+      "courses_avg": 34,
+      "courses_pass": 1
+    },
+    {
+      "courses_avg": 0,
+      "courses_pass": 0
+    },
+    {
+      "courses_avg": 0,
+      "courses_pass": 0
+    },
+    {
+      "courses_avg": 33.2,
+      "courses_pass": 5
+    },
+    {
+      "courses_avg": 1,
+      "courses_pass": 0
+    }
+  ]
+}

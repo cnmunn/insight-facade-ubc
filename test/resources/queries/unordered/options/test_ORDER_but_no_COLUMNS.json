@@ -1,0 +1,15 @@
+{
+  "title": "should throw InsightError if OPTIONS has ORDER but no COLUMNS",
+  "input": {
+    "WHERE": {
+      "GT": {
+        "courses_avg": 99
+      }
+    },
+    "OPTIONS":{
+      "ORDER":"courses_avg"
+    }
+  },
+  "errorExpected": true,
+  "with": "InsightError"
+}

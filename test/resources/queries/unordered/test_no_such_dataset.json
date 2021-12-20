@@ -1,0 +1,18 @@
+{
+  "title": "should throw InsightError if the whole query references a nonexistent dataset",
+  "input": {
+    "WHERE":{
+      "IS":{
+        "course_instructor": "taylor, jared"
+      }
+    },
+    "OPTIONS":{
+      "COLUMNS":[
+        "course_dept",
+        "course_title"
+      ]
+    }
+  },
+  "errorExpected": true,
+  "with": "InsightError"
+}

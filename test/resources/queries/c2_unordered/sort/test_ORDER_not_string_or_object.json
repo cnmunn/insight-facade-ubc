@@ -1,0 +1,14 @@
+{
+	"title": "should throw InsightError if ORDER is not a string or object",
+	"input": {
+		"WHERE": {},
+		"OPTIONS": {
+			"COLUMNS": [
+				"rooms_furniture"
+			],
+			"ORDER": []
+		}
+	},
+	"errorExpected": true,
+	"with": "InsightError"
+}

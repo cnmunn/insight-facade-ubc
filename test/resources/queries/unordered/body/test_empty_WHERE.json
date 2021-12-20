@@ -1,0 +1,14 @@
+{
+  "title": "should throw ResultTooLargeError if WHERE clause is empty",
+  "input": {
+    "WHERE":{},
+    "OPTIONS":{
+      "COLUMNS":[
+        "courses_dept",
+        "courses_title"
+      ]
+    }
+  },
+  "errorExpected": true,
+  "with": "ResultTooLargeError"
+}

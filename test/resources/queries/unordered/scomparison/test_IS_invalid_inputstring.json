@@ -1,0 +1,18 @@
+{
+  "title": "should throw InsightError if the IS clause input string contains a *",
+  "input": {
+    "WHERE":{
+      "IS":{
+        "courses_dept": "*e*d*"
+      }
+    },
+    "OPTIONS":{
+      "COLUMNS":[
+        "courses_dept",
+        "courses_title"
+      ]
+    }
+  },
+  "errorExpected": true,
+  "with": "InsightError"
+}

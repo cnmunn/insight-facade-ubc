@@ -1,0 +1,35 @@
+{
+  "title": "should return correct result if the IS clause contains no wildcards",
+  "input": {
+    "WHERE": {
+      "IS": {
+        "courses_dept": "gbpr"
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_title"
+      ]
+    }
+  },
+  "errorExpected": false,
+  "with": [
+    {
+      "courses_dept": "gbpr",
+      "courses_title": "building blocks"
+    },
+    {
+      "courses_dept": "gbpr",
+      "courses_title": "building blocks"
+    },
+    {
+      "courses_dept": "gbpr",
+      "courses_title": "biomass fraction"
+    },
+    {
+      "courses_dept": "gbpr",
+      "courses_title": "biomass fraction"
+    }
+  ]
+}

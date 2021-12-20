@@ -1,0 +1,219 @@
+{
+  "title": "should return correct result if AND clause has 1 condition",
+  "input": {
+    "WHERE":{
+      "AND":[
+        {
+          "GT": {
+            "courses_avg": 97
+          }
+        }
+      ]
+    },
+    "OPTIONS":{
+      "COLUMNS":[
+        "courses_year",
+        "courses_avg"
+      ]
+    }
+  },
+  "errorExpected": false,
+  "with": [
+    {
+      "courses_year": 2012,
+      "courses_avg": 99.19
+    },
+    {
+      "courses_year": 2009,
+      "courses_avg": 97.47
+    },
+    {
+      "courses_year": 1900,
+      "courses_avg": 97.47
+    },
+    {
+      "courses_year": 2013,
+      "courses_avg": 98
+    },
+    {
+      "courses_year": 2013,
+      "courses_avg": 98
+    },
+    {
+      "courses_year": 2015,
+      "courses_avg": 97.5
+    },
+    {
+      "courses_year": 2009,
+      "courses_avg": 98.75
+    },
+    {
+      "courses_year": 1900,
+      "courses_avg": 98.75
+    },
+    {
+      "courses_year": 2009,
+      "courses_avg": 98.08
+    },
+    {
+      "courses_year": 2009,
+      "courses_avg": 98.7
+    },
+    {
+      "courses_year": 1900,
+      "courses_avg": 98.36
+    },
+    {
+      "courses_year": 2010,
+      "courses_avg": 97.29
+    },
+    {
+      "courses_year": 1900,
+      "courses_avg": 97.29
+    },
+    {
+      "courses_year": 2014,
+      "courses_avg": 98.8
+    },
+    {
+      "courses_year": 2011,
+      "courses_avg": 97.41
+    },
+    {
+      "courses_year": 2012,
+      "courses_avg": 98.58
+    },
+    {
+      "courses_year": 1900,
+      "courses_avg": 98.58
+    },
+    {
+      "courses_year": 2012,
+      "courses_avg": 98.76
+    },
+    {
+      "courses_year": 1900,
+      "courses_avg": 98.76
+    },
+    {
+      "courses_year": 2011,
+      "courses_avg": 98.45
+    },
+    {
+      "courses_year": 1900,
+      "courses_avg": 98.45
+    },
+    {
+      "courses_year": 2009,
+      "courses_avg": 97.78
+    },
+    {
+      "courses_year": 1900,
+      "courses_avg": 97.41
+    },
+    {
+      "courses_year": 2013,
+      "courses_avg": 97.69
+    },
+    {
+      "courses_year": 2007,
+      "courses_avg": 97.09
+    },
+    {
+      "courses_year": 1900,
+      "courses_avg": 97.09
+    },
+    {
+      "courses_year": 2007,
+      "courses_avg": 97.67
+    },
+    {
+      "courses_year": 2016,
+      "courses_avg": 97.25
+    },
+    {
+      "courses_year": 1900,
+      "courses_avg": 97.25
+    },
+    {
+      "courses_year": 2009,
+      "courses_avg": 99.78
+    },
+    {
+      "courses_year": 1900,
+      "courses_avg": 99.78
+    },
+    {
+      "courses_year": 2010,
+      "courses_avg": 97.48
+    },
+    {
+      "courses_year": 1900,
+      "courses_avg": 97.48
+    },
+    {
+      "courses_year": 2010,
+      "courses_avg": 97.09
+    },
+    {
+      "courses_year": 1900,
+      "courses_avg": 97.09
+    },
+    {
+      "courses_year": 2011,
+      "courses_avg": 98.71
+    },
+    {
+      "courses_year": 1900,
+      "courses_avg": 98.71
+    },
+    {
+      "courses_year": 2015,
+      "courses_avg": 98.21
+    },
+    {
+      "courses_year": 1900,
+      "courses_avg": 98.21
+    },
+    {
+      "courses_year": 2015,
+      "courses_avg": 97.53
+    },
+    {
+      "courses_year": 1900,
+      "courses_avg": 97.53
+    },
+    {
+      "courses_year": 2013,
+      "courses_avg": 98.5
+    },
+    {
+      "courses_year": 1900,
+      "courses_avg": 98.5
+    },
+    {
+      "courses_year": 2010,
+      "courses_avg": 98.58
+    },
+    {
+      "courses_year": 1900,
+      "courses_avg": 98.58
+    },
+    {
+      "courses_year": 2010,
+      "courses_avg": 97.33
+    },
+    {
+      "courses_year": 1900,
+      "courses_avg": 97.33
+    },
+    {
+      "courses_year": 2015,
+      "courses_avg": 98.98
+    },
+    {
+      "courses_year": 1900,
+      "courses_avg": 98.98
+    }
+  ]
+}

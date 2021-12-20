@@ -1,0 +1,156 @@
+{
+	"title": "should be able to SORT by 3 columns (ascending)",
+	"input": {
+		"WHERE": {
+			"LT": {
+				"rooms_seats": 25
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"rooms_type",
+				"minRoomSize",
+				"rooms_shortname"
+			],
+			"ORDER": {
+				"dir": "UP",
+				"keys": [
+					"rooms_type",
+					"minRoomSize",
+					"rooms_shortname"
+				]
+			}
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"rooms_shortname",
+				"rooms_type"
+			],
+			"APPLY": [
+				{
+					"minRoomSize": {
+						"MIN": "rooms_seats"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": false,
+	"with": [
+		{
+			"rooms_type": "Active Learning",
+			"minRoomSize": 16,
+			"rooms_shortname": "ORCH"
+		},
+		{
+			"rooms_type": "Open Design General Purpose",
+			"minRoomSize": 16,
+			"rooms_shortname": "ANGU"
+		},
+		{
+			"rooms_type": "Open Design General Purpose",
+			"minRoomSize": 16,
+			"rooms_shortname": "ORCH"
+		},
+		{
+			"rooms_type": "Open Design General Purpose",
+			"minRoomSize": 20,
+			"rooms_shortname": "ALRD"
+		},
+		{
+			"rooms_type": "Open Design General Purpose",
+			"minRoomSize": 24,
+			"rooms_shortname": "BRKX"
+		},
+		{
+			"rooms_type": "Open Design General Purpose",
+			"minRoomSize": 24,
+			"rooms_shortname": "BUCH"
+		},
+		{
+			"rooms_type": "Small Group",
+			"minRoomSize": 6,
+			"rooms_shortname": "MCML"
+		},
+		{
+			"rooms_type": "Small Group",
+			"minRoomSize": 7,
+			"rooms_shortname": "PHRM"
+		},
+		{
+			"rooms_type": "Small Group",
+			"minRoomSize": 8,
+			"rooms_shortname": "IBLC"
+		},
+		{
+			"rooms_type": "Small Group",
+			"minRoomSize": 10,
+			"rooms_shortname": "WOOD"
+		},
+		{
+			"rooms_type": "Small Group",
+			"minRoomSize": 12,
+			"rooms_shortname": "FNH"
+		},
+		{
+			"rooms_type": "Small Group",
+			"minRoomSize": 12,
+			"rooms_shortname": "SOWK"
+		},
+		{
+			"rooms_type": "Small Group",
+			"minRoomSize": 12,
+			"rooms_shortname": "SPPH"
+		},
+		{
+			"rooms_type": "Small Group",
+			"minRoomSize": 16,
+			"rooms_shortname": "ANGU"
+		},
+		{
+			"rooms_type": "Small Group",
+			"minRoomSize": 16,
+			"rooms_shortname": "BIOL"
+		},
+		{
+			"rooms_type": "Small Group",
+			"minRoomSize": 18,
+			"rooms_shortname": "BUCH"
+		},
+		{
+			"rooms_type": "Small Group",
+			"minRoomSize": 18,
+			"rooms_shortname": "FSC"
+		},
+		{
+			"rooms_type": "Small Group",
+			"minRoomSize": 20,
+			"rooms_shortname": "AUDX"
+		},
+		{
+			"rooms_type": "Small Group",
+			"minRoomSize": 20,
+			"rooms_shortname": "LASR"
+		},
+		{
+			"rooms_type": "Small Group",
+			"minRoomSize": 20,
+			"rooms_shortname": "SCRF"
+		},
+		{
+			"rooms_type": "Small Group",
+			"minRoomSize": 21,
+			"rooms_shortname": "GEOG"
+		},
+		{
+			"rooms_type": "Small Group",
+			"minRoomSize": 22,
+			"rooms_shortname": "CEME"
+		},
+		{
+			"rooms_type": "Small Group",
+			"minRoomSize": 24,
+			"rooms_shortname": "PCOH"
+		}
+	]
+}

@@ -1,0 +1,22 @@
+{
+	"title": "should throw InsightError if APPLYRULE is not an object",
+	"input": {
+		"WHERE": {},
+		"OPTIONS": {
+			"COLUMNS": [
+				"courses_title",
+				"overallAvg"
+			]
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"courses_title"
+			],
+			"APPLY": [
+				"overallAvg"
+			]
+		}
+	},
+	"errorExpected": true,
+	"with": "InsightError"
+}

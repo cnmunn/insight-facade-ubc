@@ -1,0 +1,18 @@
+{
+  "title": "should throw InsightError if MCOMPARATOR (EQ) clause input is not a number",
+  "input": {
+    "WHERE":{
+      "EQ":{
+        "courses_avg": "70"
+      }
+    },
+    "OPTIONS":{
+      "COLUMNS":[
+        "courses_dept",
+        "courses_avg"
+      ]
+    }
+  },
+  "errorExpected": true,
+  "with": "InsightError"
+}

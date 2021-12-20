@@ -1,0 +1,19 @@
+{
+	"title": "should throw InsightError if TRANSFORMATIONS has 1 key that is invalid",
+	"input": {
+		"WHERE": {},
+		"OPTIONS": {
+			"COLUMNS": [
+				"courses_title",
+				"overallAvg"
+			]
+		},
+		"TRANSFORMATIONS": {
+			"bad": [
+				"courses_title"
+			]
+		}
+	},
+	"errorExpected": true,
+	"with": "InsightError"
+}

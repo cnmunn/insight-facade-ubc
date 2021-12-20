@@ -1,0 +1,177 @@
+{
+	"title": "GROUP key does not have to appear in columns",
+	"input": {
+		"WHERE": {
+			"AND": [
+				{
+					"GT": {
+						"courses_year": 1900
+					}
+				},
+				{
+					"GT": {
+						"courses_fail": 50
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"courses_dept",
+				"courses_year"
+			]
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"courses_dept",
+				"courses_id",
+				"courses_year",
+				"courses_instructor"
+			],
+			"APPLY": []
+		}
+	},
+	"errorExpected": false,
+	"with": [
+		{
+			"courses_dept": "biol",
+			"courses_year": 2008
+		},
+		{
+			"courses_dept": "biol",
+			"courses_year": 2007
+		},
+		{
+			"courses_dept": "biol",
+			"courses_year": 2011
+		},
+		{
+			"courses_dept": "biol",
+			"courses_year": 2012
+		},
+		{
+			"courses_dept": "biol",
+			"courses_year": 2008
+		},
+		{
+			"courses_dept": "biol",
+			"courses_year": 2014
+		},
+		{
+			"courses_dept": "biol",
+			"courses_year": 2015
+		},
+		{
+			"courses_dept": "biol",
+			"courses_year": 2013
+		},
+		{
+			"courses_dept": "biol",
+			"courses_year": 2009
+		},
+		{
+			"courses_dept": "biol",
+			"courses_year": 2007
+		},
+		{
+			"courses_dept": "chem",
+			"courses_year": 2015
+		},
+		{
+			"courses_dept": "chem",
+			"courses_year": 2016
+		},
+		{
+			"courses_dept": "chem",
+			"courses_year": 2011
+		},
+		{
+			"courses_dept": "chem",
+			"courses_year": 2014
+		},
+		{
+			"courses_dept": "chem",
+			"courses_year": 2012
+		},
+		{
+			"courses_dept": "chem",
+			"courses_year": 2010
+		},
+		{
+			"courses_dept": "chem",
+			"courses_year": 2008
+		},
+		{
+			"courses_dept": "chem",
+			"courses_year": 2009
+		},
+		{
+			"courses_dept": "chem",
+			"courses_year": 2013
+		},
+		{
+			"courses_dept": "chem",
+			"courses_year": 2010
+		},
+		{
+			"courses_dept": "chem",
+			"courses_year": 2009
+		},
+		{
+			"courses_dept": "chem",
+			"courses_year": 2014
+		},
+		{
+			"courses_dept": "chem",
+			"courses_year": 2014
+		},
+		{
+			"courses_dept": "chem",
+			"courses_year": 2012
+		},
+		{
+			"courses_dept": "chem",
+			"courses_year": 2012
+		},
+		{
+			"courses_dept": "chem",
+			"courses_year": 2010
+		},
+		{
+			"courses_dept": "chem",
+			"courses_year": 2015
+		},
+		{
+			"courses_dept": "chem",
+			"courses_year": 2015
+		},
+		{
+			"courses_dept": "cpsc",
+			"courses_year": 2013
+		},
+		{
+			"courses_dept": "econ",
+			"courses_year": 2009
+		},
+		{
+			"courses_dept": "econ",
+			"courses_year": 2007
+		},
+		{
+			"courses_dept": "econ",
+			"courses_year": 2008
+		},
+		{
+			"courses_dept": "math",
+			"courses_year": 2015
+		},
+		{
+			"courses_dept": "math",
+			"courses_year": 2013
+		},
+		{
+			"courses_dept": "math",
+			"courses_year": 2011
+		}
+	]
+}

@@ -1,0 +1,27 @@
+{
+	"WHERE": {
+		"GT": {
+			"rooms_seats": 100
+		}
+	},
+	"OPTIONS": {
+		"COLUMNS": [
+			"rooms_shortname",
+			"rooms_type",
+			"numRooms"
+		]
+	},
+	"TRANSFORMATIONS": {
+		"GROUP": [
+			"rooms_shortname",
+			"rooms_type"
+		],
+		"APPLY": [
+			{
+				"numRooms": {
+					"COUNT": "rooms_name"
+				}
+			}
+		]
+	}
+}

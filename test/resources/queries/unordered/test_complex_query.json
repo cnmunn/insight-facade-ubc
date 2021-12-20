@@ -1,0 +1,368 @@
+{
+  "title": "should return the correct result for all eosc 100-300 level courses OR crwr 200 level courses with average > 85",
+  "input": {
+    "WHERE": {
+      "AND": [
+        {
+          "OR": [
+            {
+              "AND": [
+                {
+                  "IS": {
+                    "courses_dept": "eosc"
+                  }
+                },
+                {
+                  "NOT": {
+                    "OR": [
+                      {
+                        "IS": {
+                          "courses_id": "4*"
+                        }
+                      },
+                      {
+                        "IS": {
+                          "courses_id": "5*"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "AND": [
+                {
+                  "IS": {
+                    "courses_dept": "crwr"
+                  }
+                },
+                {
+                  "IS": {
+                    "courses_id": "2*"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "GT": {
+            "courses_avg": 85
+          }
+        }
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_id",
+        "courses_year",
+        "courses_avg"
+      ]
+    }
+  },
+  "errorExpected": false,
+  "with": [
+    {
+      "courses_dept": "crwr",
+      "courses_id": "206",
+      "courses_year": 2014,
+      "courses_avg": 85.08
+    },
+    {
+      "courses_dept": "crwr",
+      "courses_id": "206",
+      "courses_year": 2009,
+      "courses_avg": 87.12
+    },
+    {
+      "courses_dept": "crwr",
+      "courses_id": "206",
+      "courses_year": 1900,
+      "courses_avg": 87.12
+    },
+    {
+      "courses_dept": "crwr",
+      "courses_id": "213",
+      "courses_year": 2016,
+      "courses_avg": 85.02
+    },
+    {
+      "courses_dept": "crwr",
+      "courses_id": "213",
+      "courses_year": 2016,
+      "courses_avg": 85.11
+    },
+    {
+      "courses_dept": "crwr",
+      "courses_id": "213",
+      "courses_year": 2015,
+      "courses_avg": 85.65
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_id": "111",
+      "courses_year": 2011,
+      "courses_avg": 86.35
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_id": "111",
+      "courses_year": 2011,
+      "courses_avg": 89.58
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_id": "111",
+      "courses_year": 2011,
+      "courses_avg": 86.67
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_id": "111",
+      "courses_year": 2011,
+      "courses_avg": 88
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_id": "111",
+      "courses_year": 2011,
+      "courses_avg": 87.5
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_id": "111",
+      "courses_year": 2011,
+      "courses_avg": 87.17
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_id": "111",
+      "courses_year": 2011,
+      "courses_avg": 87.09
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_id": "111",
+      "courses_year": 2011,
+      "courses_avg": 85.3
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_id": "111",
+      "courses_year": 1900,
+      "courses_avg": 86.52
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_id": "111",
+      "courses_year": 2010,
+      "courses_avg": 88.32
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_id": "111",
+      "courses_year": 2010,
+      "courses_avg": 88.14
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_id": "111",
+      "courses_year": 2010,
+      "courses_avg": 88.08
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_id": "111",
+      "courses_year": 2010,
+      "courses_avg": 87.85
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_id": "111",
+      "courses_year": 2010,
+      "courses_avg": 89.17
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_id": "111",
+      "courses_year": 2010,
+      "courses_avg": 86.3
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_id": "111",
+      "courses_year": 2010,
+      "courses_avg": 86.95
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_id": "111",
+      "courses_year": 2010,
+      "courses_avg": 85.36
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_id": "111",
+      "courses_year": 1900,
+      "courses_avg": 86.47
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_id": "111",
+      "courses_year": 2012,
+      "courses_avg": 87.1
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_id": "111",
+      "courses_year": 2012,
+      "courses_avg": 90
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_id": "111",
+      "courses_year": 2012,
+      "courses_avg": 90.62
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_id": "111",
+      "courses_year": 2012,
+      "courses_avg": 87.29
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_id": "111",
+      "courses_year": 2012,
+      "courses_avg": 88.67
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_id": "111",
+      "courses_year": 2012,
+      "courses_avg": 85.76
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_id": "111",
+      "courses_year": 2012,
+      "courses_avg": 87.75
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_id": "111",
+      "courses_year": 1900,
+      "courses_avg": 85.58
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_id": "111",
+      "courses_year": 2015,
+      "courses_avg": 85.23
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_id": "111",
+      "courses_year": 2015,
+      "courses_avg": 85.07
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_id": "111",
+      "courses_year": 2008,
+      "courses_avg": 90.56
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_id": "111",
+      "courses_year": 2008,
+      "courses_avg": 86.8
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_id": "111",
+      "courses_year": 1900,
+      "courses_avg": 89.21
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_id": "111",
+      "courses_year": 2007,
+      "courses_avg": 88.79
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_id": "111",
+      "courses_year": 2007,
+      "courses_avg": 87.31
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_id": "111",
+      "courses_year": 2007,
+      "courses_avg": 85.81
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_id": "111",
+      "courses_year": 2016,
+      "courses_avg": 86.88
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_id": "111",
+      "courses_year": 2016,
+      "courses_avg": 90.15
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_id": "111",
+      "courses_year": 2016,
+      "courses_avg": 88.3
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_id": "111",
+      "courses_year": 2016,
+      "courses_avg": 89.62
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_id": "111",
+      "courses_year": 1900,
+      "courses_avg": 86.87
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_id": "111",
+      "courses_year": 2008,
+      "courses_avg": 89
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_id": "111",
+      "courses_year": 2008,
+      "courses_avg": 85.85
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_id": "114",
+      "courses_year": 2009,
+      "courses_avg": 86.37
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_id": "270",
+      "courses_year": 2015,
+      "courses_avg": 85.38
+    },
+    {
+      "courses_dept": "eosc",
+      "courses_id": "270",
+      "courses_year": 1900,
+      "courses_avg": 85.38
+    }
+  ]
+}

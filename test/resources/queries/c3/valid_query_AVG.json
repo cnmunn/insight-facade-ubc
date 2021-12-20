@@ -1,0 +1,34 @@
+{
+	"WHERE": {
+		"AND": [
+			{
+				"IS": {
+					"courses_dept": "cpsc"
+				}
+			},
+			{
+				"IS": {
+					"courses_id": "3*"
+				}
+			}
+		]
+	},
+	"OPTIONS": {
+		"COLUMNS": [
+			"courses_title",
+			"averageGrade"
+		]
+	},
+	"TRANSFORMATIONS": {
+		"GROUP": [
+			"courses_title"
+		],
+		"APPLY": [
+			{
+				"averageGrade": {
+					"AVG": "courses_avg"
+				}
+			}
+		]
+	}
+}

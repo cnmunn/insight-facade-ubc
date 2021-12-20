@@ -1,0 +1,117 @@
+{
+	"title": "should be able to SORT 1 string column in ascending order using an object",
+	"input": {
+		"WHERE": {
+			"GT": {
+				"rooms_seats": 200
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"rooms_name",
+				"rooms_address"
+			],
+			"ORDER": {
+				"dir": "UP",
+				"keys": [
+					"rooms_name"
+				]
+			}
+		}
+	},
+	"errorExpected": false,
+	"with": [
+		{
+			"rooms_name": "ANGU_098",
+			"rooms_address": "2053 Main Mall"
+		},
+		{
+			"rooms_name": "BIOL_2000",
+			"rooms_address": "6270 University Boulevard"
+		},
+		{
+			"rooms_name": "BUCH_A101",
+			"rooms_address": "1866 Main Mall"
+		},
+		{
+			"rooms_name": "CHEM_B150",
+			"rooms_address": "2036 Main Mall"
+		},
+		{
+			"rooms_name": "CHEM_B250",
+			"rooms_address": "2036 Main Mall"
+		},
+		{
+			"rooms_name": "CIRS_1250",
+			"rooms_address": "2260 West Mall, V6T 1Z4"
+		},
+		{
+			"rooms_name": "ESB_1013",
+			"rooms_address": "2207 Main Mall"
+		},
+		{
+			"rooms_name": "FSC_1005",
+			"rooms_address": "2424 Main Mall"
+		},
+		{
+			"rooms_name": "GEOG_100",
+			"rooms_address": "1984 West Mall"
+		},
+		{
+			"rooms_name": "HEBB_100",
+			"rooms_address": "2045 East Mall"
+		},
+		{
+			"rooms_name": "HENN_200",
+			"rooms_address": "6224 Agricultural Road"
+		},
+		{
+			"rooms_name": "LSC_1001",
+			"rooms_address": "2350 Health Sciences Mall"
+		},
+		{
+			"rooms_name": "LSC_1002",
+			"rooms_address": "2350 Health Sciences Mall"
+		},
+		{
+			"rooms_name": "LSK_200",
+			"rooms_address": "6356 Agricultural Road"
+		},
+		{
+			"rooms_name": "MATH_100",
+			"rooms_address": "1984 Mathematics Road"
+		},
+		{
+			"rooms_name": "OSBO_A",
+			"rooms_address": "6108 Thunderbird Boulevard"
+		},
+		{
+			"rooms_name": "PHRM_1101",
+			"rooms_address": "2405 Wesbrook Mall"
+		},
+		{
+			"rooms_name": "SCRF_100",
+			"rooms_address": "2125 Main Mall"
+		},
+		{
+			"rooms_name": "SRC_220A",
+			"rooms_address": "6000 Student Union Blvd"
+		},
+		{
+			"rooms_name": "SRC_220B",
+			"rooms_address": "6000 Student Union Blvd"
+		},
+		{
+			"rooms_name": "SRC_220C",
+			"rooms_address": "6000 Student Union Blvd"
+		},
+		{
+			"rooms_name": "WESB_100",
+			"rooms_address": "6174 University Boulevard"
+		},
+		{
+			"rooms_name": "WOOD_2",
+			"rooms_address": "2194 Health Sciences Mall"
+		}
+	]
+}

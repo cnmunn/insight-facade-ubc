@@ -1,0 +1,179 @@
+{
+  "title": "should return correct result if the IS clause uses one wildcard at the end",
+  "input": {
+	  "WHERE": {
+		  "IS": {
+			  "courses_title": "resrch*"
+		  }
+	  },
+	  "OPTIONS": {
+		  "COLUMNS": [
+			  "courses_dept",
+			  "courses_title"
+		  ]
+	  }
+  },
+  "errorExpected": false,
+  "with": [
+	  {
+		  "courses_dept": "geog",
+		  "courses_title": "resrch envir geo"
+	  },
+	  {
+		  "courses_dept": "geog",
+		  "courses_title": "resrch envir geo"
+	  },
+	  {
+		  "courses_dept": "geog",
+		  "courses_title": "resrch envir geo"
+	  },
+	  {
+		  "courses_dept": "geog",
+		  "courses_title": "resrch envir geo"
+	  },
+	  {
+		  "courses_dept": "geog",
+		  "courses_title": "resrch envir geo"
+	  },
+	  {
+		  "courses_dept": "geog",
+		  "courses_title": "resrch envir geo"
+	  },
+	  {
+		  "courses_dept": "geog",
+		  "courses_title": "resrch envir geo"
+	  },
+	  {
+		  "courses_dept": "geog",
+		  "courses_title": "resrch envir geo"
+	  },
+	  {
+		  "courses_dept": "geog",
+		  "courses_title": "resrch envir geo"
+	  },
+	  {
+		  "courses_dept": "geog",
+		  "courses_title": "resrch envir geo"
+	  },
+	  {
+		  "courses_dept": "geog",
+		  "courses_title": "resrch envir geo"
+	  },
+	  {
+		  "courses_dept": "geog",
+		  "courses_title": "resrch envir geo"
+	  },
+	  {
+		  "courses_dept": "geog",
+		  "courses_title": "resrch envir geo"
+	  },
+	  {
+		  "courses_dept": "geog",
+		  "courses_title": "resrch envir geo"
+	  },
+	  {
+		  "courses_dept": "geog",
+		  "courses_title": "resrch hist geog"
+	  },
+	  {
+		  "courses_dept": "geog",
+		  "courses_title": "resrch hist geog"
+	  },
+	  {
+		  "courses_dept": "geog",
+		  "courses_title": "resrch hist geog"
+	  },
+	  {
+		  "courses_dept": "geog",
+		  "courses_title": "resrch hist geog"
+	  },
+	  {
+		  "courses_dept": "geog",
+		  "courses_title": "resrch hist geog"
+	  },
+	  {
+		  "courses_dept": "geog",
+		  "courses_title": "resrch hist geog"
+	  },
+	  {
+		  "courses_dept": "geog",
+		  "courses_title": "resrch hist geog"
+	  },
+	  {
+		  "courses_dept": "geog",
+		  "courses_title": "resrch hist geog"
+	  },
+	  {
+		  "courses_dept": "geog",
+		  "courses_title": "resrch hist geog"
+	  },
+	  {
+		  "courses_dept": "geog",
+		  "courses_title": "resrch hist geog"
+	  },
+	  {
+		  "courses_dept": "geog",
+		  "courses_title": "resrch hist geog"
+	  },
+	  {
+		  "courses_dept": "geog",
+		  "courses_title": "resrch hist geog"
+	  },
+	  {
+		  "courses_dept": "geog",
+		  "courses_title": "resrch hist geog"
+	  },
+	  {
+		  "courses_dept": "geog",
+		  "courses_title": "resrch hist geog"
+	  },
+	  {
+		  "courses_dept": "kin",
+		  "courses_title": "resrch meth kin"
+	  },
+	  {
+		  "courses_dept": "kin",
+		  "courses_title": "resrch meth kin"
+	  },
+	  {
+		  "courses_dept": "kin",
+		  "courses_title": "resrch meth kin"
+	  },
+	  {
+		  "courses_dept": "kin",
+		  "courses_title": "resrch meth kin"
+	  },
+	  {
+		  "courses_dept": "kin",
+		  "courses_title": "resrch meth kin"
+	  },
+	  {
+		  "courses_dept": "kin",
+		  "courses_title": "resrch meth kin"
+	  },
+	  {
+		  "courses_dept": "kin",
+		  "courses_title": "resrch meth kin"
+	  },
+	  {
+		  "courses_dept": "kin",
+		  "courses_title": "resrch meth kin"
+	  },
+	  {
+		  "courses_dept": "kin",
+		  "courses_title": "resrch meth kin"
+	  },
+	  {
+		  "courses_dept": "kin",
+		  "courses_title": "resrch meth kin"
+	  },
+	  {
+		  "courses_dept": "kin",
+		  "courses_title": "resrch meth kin"
+	  },
+	  {
+		  "courses_dept": "kin",
+		  "courses_title": "resrch meth kin"
+	  }
+  ]
+}

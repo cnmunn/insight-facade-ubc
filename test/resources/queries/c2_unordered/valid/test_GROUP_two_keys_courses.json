@@ -1,0 +1,195 @@
+{
+	"title": "can GROUP by 2 columns with an empty APPLY (on a courses dataset)",
+	"input": {
+		"WHERE": {
+			"AND": [
+				{
+					"GT": {
+						"courses_avg": 90
+					}
+				},
+				{
+					"IS": {
+						"courses_id": "1*"
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"courses_title",
+				"courses_year"
+			]
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"courses_title",
+				"courses_year"
+			],
+			"APPLY": []
+		}
+	},
+	"errorExpected": false,
+	"with": [
+		{
+			"courses_title": "intro to conserv",
+			"courses_year": 2009
+		},
+		{
+			"courses_title": "intro to conserv",
+			"courses_year": 1900
+		},
+		{
+			"courses_title": "intro to conserv",
+			"courses_year": 2008
+		},
+		{
+			"courses_title": "lab expl earth",
+			"courses_year": 2012
+		},
+		{
+			"courses_title": "lab expl earth",
+			"courses_year": 2008
+		},
+		{
+			"courses_title": "lab expl earth",
+			"courses_year": 2016
+		},
+		{
+			"courses_title": "intr hindi-urdu",
+			"courses_year": 2013
+		},
+		{
+			"courses_title": "intr hindi-urdu",
+			"courses_year": 2007
+		},
+		{
+			"courses_title": "intr hindi-urdu",
+			"courses_year": 1900
+		},
+		{
+			"courses_title": "cnsl mat cr prov",
+			"courses_year": 2014
+		},
+		{
+			"courses_title": "cnsl mat cr prov",
+			"courses_year": 1900
+		},
+		{
+			"courses_title": "cnsl mat cr prov",
+			"courses_year": 2012
+		},
+		{
+			"courses_title": "cnsl mat cr prov",
+			"courses_year": 2013
+		},
+		{
+			"courses_title": "cnsl mat cr prov",
+			"courses_year": 2015
+		},
+		{
+			"courses_title": "cnsl mat cr prov",
+			"courses_year": 2011
+		},
+		{
+			"courses_title": "appl hlth serv",
+			"courses_year": 2014
+		},
+		{
+			"courses_title": "appl hlth serv",
+			"courses_year": 1900
+		},
+		{
+			"courses_title": "appl hlth serv",
+			"courses_year": 2012
+		},
+		{
+			"courses_title": "appl hlth serv",
+			"courses_year": 2011
+		},
+		{
+			"courses_title": "crit apprais lit",
+			"courses_year": 2015
+		},
+		{
+			"courses_title": "crit apprais lit",
+			"courses_year": 1900
+		},
+		{
+			"courses_title": "intro musc thry",
+			"courses_year": 2008
+		},
+		{
+			"courses_title": "intro musc thry",
+			"courses_year": 2009
+		},
+		{
+			"courses_title": "contem players",
+			"courses_year": 2015
+		},
+		{
+			"courses_title": "contem players",
+			"courses_year": 1900
+		},
+		{
+			"courses_title": "contem players",
+			"courses_year": 2010
+		},
+		{
+			"courses_title": "jazz ensemble",
+			"courses_year": 2011
+		},
+		{
+			"courses_title": "log & crit think",
+			"courses_year": 2010
+		},
+		{
+			"courses_title": "log & crit think",
+			"courses_year": 2008
+		},
+		{
+			"courses_title": "phrm in practc 1",
+			"courses_year": 2015
+		},
+		{
+			"courses_title": "phrm in practc 1",
+			"courses_year": 1900
+		},
+		{
+			"courses_title": "tech in hlthcare",
+			"courses_year": 2015
+		},
+		{
+			"courses_title": "tech in hlthcare",
+			"courses_year": 1900
+		},
+		{
+			"courses_title": "intro exper phys",
+			"courses_year": 2010
+		},
+		{
+			"courses_title": "basic russian ii",
+			"courses_year": 2012
+		},
+		{
+			"courses_title": "basic russian ii",
+			"courses_year": 2013
+		},
+		{
+			"courses_title": "intro sanskrit",
+			"courses_year": 2015
+		},
+		{
+			"courses_title": "intro sanskrit",
+			"courses_year": 1900
+		},
+		{
+			"courses_title": "intro tech prod",
+			"courses_year": 2014
+		},
+		{
+			"courses_title": "intro tech prod",
+			"courses_year": 1900
+		}
+	]
+}

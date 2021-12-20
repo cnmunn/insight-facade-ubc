@@ -1,0 +1,225 @@
+{
+	"title": "should be able to SORT 2 string columns (descending order)",
+	"input": {
+		"WHERE": {
+			"GT": {
+				"courses_fail": 60
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"courses_dept",
+				"courses_id"
+			],
+			"ORDER": {
+				"dir": "DOWN",
+				"keys": [
+					"courses_dept",
+					"courses_id"
+				]
+			}
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"courses_dept",
+				"courses_id"
+			],
+			"APPLY": []
+		}
+	},
+	"errorExpected": false,
+	"with": [
+		{
+			"courses_dept": "wrds",
+			"courses_id": "150"
+		},
+		{
+			"courses_dept": "psyc",
+			"courses_id": "218"
+		},
+		{
+			"courses_dept": "psyc",
+			"courses_id": "217"
+		},
+		{
+			"courses_dept": "psyc",
+			"courses_id": "102"
+		},
+		{
+			"courses_dept": "psyc",
+			"courses_id": "101"
+		},
+		{
+			"courses_dept": "phys",
+			"courses_id": "170"
+		},
+		{
+			"courses_dept": "phys",
+			"courses_id": "158"
+		},
+		{
+			"courses_dept": "phys",
+			"courses_id": "157"
+		},
+		{
+			"courses_dept": "phys",
+			"courses_id": "102"
+		},
+		{
+			"courses_dept": "phys",
+			"courses_id": "101"
+		},
+		{
+			"courses_dept": "phys",
+			"courses_id": "100"
+		},
+		{
+			"courses_dept": "phil",
+			"courses_id": "120"
+		},
+		{
+			"courses_dept": "math",
+			"courses_id": "255"
+		},
+		{
+			"courses_dept": "math",
+			"courses_id": "221"
+		},
+		{
+			"courses_dept": "math",
+			"courses_id": "215"
+		},
+		{
+			"courses_dept": "math",
+			"courses_id": "200"
+		},
+		{
+			"courses_dept": "math",
+			"courses_id": "184"
+		},
+		{
+			"courses_dept": "math",
+			"courses_id": "180"
+		},
+		{
+			"courses_dept": "math",
+			"courses_id": "152"
+		},
+		{
+			"courses_dept": "math",
+			"courses_id": "110"
+		},
+		{
+			"courses_dept": "math",
+			"courses_id": "105"
+		},
+		{
+			"courses_dept": "math",
+			"courses_id": "104"
+		},
+		{
+			"courses_dept": "math",
+			"courses_id": "103"
+		},
+		{
+			"courses_dept": "math",
+			"courses_id": "102"
+		},
+		{
+			"courses_dept": "math",
+			"courses_id": "101"
+		},
+		{
+			"courses_dept": "math",
+			"courses_id": "100"
+		},
+		{
+			"courses_dept": "eosc",
+			"courses_id": "118"
+		},
+		{
+			"courses_dept": "eosc",
+			"courses_id": "114"
+		},
+		{
+			"courses_dept": "engl",
+			"courses_id": "112"
+		},
+		{
+			"courses_dept": "econ",
+			"courses_id": "102"
+		},
+		{
+			"courses_dept": "econ",
+			"courses_id": "101"
+		},
+		{
+			"courses_dept": "cpsc",
+			"courses_id": "210"
+		},
+		{
+			"courses_dept": "cpsc",
+			"courses_id": "110"
+		},
+		{
+			"courses_dept": "comm",
+			"courses_id": "293"
+		},
+		{
+			"courses_dept": "comm",
+			"courses_id": "290"
+		},
+		{
+			"courses_dept": "chem",
+			"courses_id": "233"
+		},
+		{
+			"courses_dept": "chem",
+			"courses_id": "205"
+		},
+		{
+			"courses_dept": "chem",
+			"courses_id": "154"
+		},
+		{
+			"courses_dept": "chem",
+			"courses_id": "123"
+		},
+		{
+			"courses_dept": "chem",
+			"courses_id": "121"
+		},
+		{
+			"courses_dept": "busi",
+			"courses_id": "330"
+		},
+		{
+			"courses_dept": "biol",
+			"courses_id": "335"
+		},
+		{
+			"courses_dept": "biol",
+			"courses_id": "201"
+		},
+		{
+			"courses_dept": "biol",
+			"courses_id": "200"
+		},
+		{
+			"courses_dept": "biol",
+			"courses_id": "121"
+		},
+		{
+			"courses_dept": "biol",
+			"courses_id": "112"
+		},
+		{
+			"courses_dept": "apsc",
+			"courses_id": "201"
+		},
+		{
+			"courses_dept": "apsc",
+			"courses_id": "160"
+		}
+	]
+}
